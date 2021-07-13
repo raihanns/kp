@@ -3,11 +3,11 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url(''); ?>">
-        <div class="sidebar-brand-icon">
+        <div class="sidebar-brand-icon mt-3">
             <!-- <i class="fas fa-database"></i> -->
-            <img src="<?= base_url('assets/img/'); ?>material-logo.png" width="70" height="70" alt="">
+            <img src="<?= base_url('assets/img/'); ?>pemkab.png" width="70" height="70" alt="">
         </div>
-        <a class="m-3" style="color: white; font-size: smaller;"><b>SATU DATA</b><br>KEMENTERIAN KELAUTAN DAN PERIKANAN</a>
+        <a class="m-3" style="color: white; font-size: smaller;">DINAS PEKERJAAN UMUM DAN TATA RUANG</a>
     </a>
 
     <!-- Divider -->

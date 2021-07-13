@@ -24,9 +24,9 @@
 <body class="bg-gradient-primary">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="<?= base_url('assets/img/'); ?>material-logo.png" width="70" height="70" alt="">
+            <img src="<?= base_url('assets/img/'); ?>pemkab.png" width="70" height="70" alt="">
         </a>
 
-        <h5 class="nav-link mt-2"><b>SATU DATA</b> <br>KEMENTERIAN KELAUTAN DAN PERIKANAN</h5>
+        <h5 class="nav-link mt-2">DINAS PEKERJAAN UMUM DAN TATA RUANG</h5>
 
     </nav>
