@@ -9,14 +9,12 @@
     <meta name="generator" content="Hugo 0.80.0">
     <title>Data Jalan</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/offcanvas/">
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/offcanvas/"> -->
 
 
 
     <!-- Bootstrap core CSS -->
     <link href="<?= base_url(); ?>/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
 
     <style>
         .bd-placeholder-img {
@@ -37,19 +35,19 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="offcanvas.css" rel="stylesheet">
+    <link href="data_jalan.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand mr-auto mr-lg-0" href="#">DATA JALAN</a>
-        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <a class="navbar-brand mr-auto mr-lg-0" href="#">HOME</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="data_jalan">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
+        <div class="navbar-collapse data_jalan-collapse" id="navbarsExampleDefault">
+            <!-- <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
                 </li>
@@ -74,7 +72,7 @@
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 
@@ -359,7 +357,7 @@
     </script>
 
 
-    <script src="offcanvas.js"></script>
+    <script src="data_jalan.js"></script>
 </body>
 
 </html>
