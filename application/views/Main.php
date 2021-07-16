@@ -7,13 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Starter Template · Bootstrap v4.6</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/starter-template/">
+    <title>Main</title>
 
 
-
-    <!-- Bootstrap core CSS -->
     <link href="<?= base_url(); ?>/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
