@@ -41,7 +41,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,11 +75,46 @@
     </nav>
 
     <main role="main" class="container">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nama Jalan</th>
+                    <th scope="col">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Bojong Soang</td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Lihat Data Jalan</button>
+                        <button type="button" class="btn btn-primary">Lihat Kegiatan</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Cijerah</td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Lihat Data Jalan</button>
+                        <button type="button" class="btn btn-primary">Lihat Kegiatan</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Margaasih</td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Lihat Data Jalan</button>
+                        <button type="button" class="btn btn-primary">Lihat Kegiatan</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-        <div class="starter-template">
+        <!-- <div class="starter-template">
             <h1>Bootstrap starter template</h1>
             <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        </div>
+        </div> -->
 
     </main><!-- /.container -->
 
