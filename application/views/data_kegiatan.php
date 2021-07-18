@@ -108,7 +108,7 @@
 
         <!-- PROFILE JALAN  -->
         <div class="my-3 p-3 bg-white rounded shadow-sm">
-            <h6 class="border-bottom border-gray pb-2 mb-0">PROFILE JALAN</h6>
+            <h6 class="border-bottom border-gray pb-2 mb-0">KEGIATAN</h6>
             <div class="media text-muted pt-3">
                 <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
@@ -116,8 +116,8 @@
                 </svg>
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">No Ruas Jalan</strong>
-                    00001152711
+                    <strong class="d-block text-gray-dark">Nama Paket Kegiatan</strong>
+
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -127,8 +127,8 @@
                 </svg>
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">Nama Ruas Jalan</strong>
-                    Bojong Soang
+                    <strong class="d-block text-gray-dark">Perusahaan</strong>
+                    
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -138,8 +138,8 @@
                 </svg>
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">Kecamatan</strong>
-                    Bojong Soang
+                    <strong class="d-block text-gray-dark">Nilai Kontrak</strong>
+                    
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -149,8 +149,8 @@
                 </svg>
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">Desa</strong>
-                    Dayeuh Kolot
+                    <strong class="d-block text-gray-dark">Volume Pekerjaan</strong>
+                
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -160,191 +160,22 @@
                 </svg>
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">Panjang</strong>
-                    2 KM
+                    <strong class="d-block text-gray-dark">Video Kegiatan</strong>
+                
                 </p>
+                </div>
+            <div class="media text-muted pt-3">
                 <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#6f42c1" /><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text>
                 </svg>
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">Lebar</strong>
-                    2.5 M
+                    <strong class="d-block text-gray-dark">Foto Kegiatan</strong>
+                
                 </p>
-            </div>
         </div>
         </div>
-
-        <!-- DATA KONDISI JALAN -->
-        <div class="my-3 p-3 bg-white rounded shadow-sm">
-            <h6 class="border-bottom border-gray pb-2 mb-0">KONDISI JALAN</h6>
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
-                </svg>
-                <!-- JENIS PERKERASAN ASPAL -->
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Jenis Perkerasan Aspal</strong>
-                    </div>
-                    <span class="d-block">2 KM</span>
-                </div>
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Dalam %</strong>
-                    </div>
-                    <span class="d-block">35%</span>
-                </div>
-            </div>
-
-            <!-- JENIS PERKERASAN BETON -->
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
-                </svg>
-
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Jenis Perkerasan Beton</strong>
-                    </div>
-                    <span class="d-block">3 KM</span>
-                </div>
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Dalam %</strong>
-                    </div>
-                    <span class="d-block">25%</span>
-                </div>
-            </div>
-
-            <!-- JENIS PERKERASAN KRIKIL -->
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
-                </svg>
-
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Jenis Perkerasan Krikil</strong>
-                    </div>
-                    <span class="d-block">3 KM</span>
-                </div>
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Dalam %</strong>
-                    </div>
-                    <span class="d-block">25%</span>
-                </div>
-            </div>
-
-            <!-- JENIS PERKERASAN TANAH/BELUM TEMBUS -->
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
-                </svg>
-
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Jenis Perkerasan Tanah/Belum Tembus</strong>
-                    </div>
-                    <span class="d-block">3 KM</span>
-                </div>
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Dalam %</strong>
-                    </div>
-                    <span class="d-block">25%</span>
-                </div>
-            </div>
-
-            <!-- KONDISI BAIK -->
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
-                </svg>
-
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Kondisi Baik</strong>
-                    </div>
-                    <span class="d-block">3 KM</span>
-                </div>
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Dalam %</strong>
-                    </div>
-                    <span class="d-block">25%</span>
-                </div>
-            </div>
-
-            <!-- KONDISI SEDANG -->
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
-                </svg>
-
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Kondisi Sedang</strong>
-                    </div>
-                    <span class="d-block">3 KM</span>
-                </div>
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Dalam %</strong>
-                    </div>
-                    <span class="d-block">25%</span>
-                </div>
-            </div>
-
-            <!-- KONDISI RUSAK RINGAN -->
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
-                </svg>
-
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Kondisi Rusak Ringan</strong>
-                    </div>
-                    <span class="d-block">3 KM</span>
-                </div>
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Dalam %</strong>
-                    </div>
-                    <span class="d-block">25%</span>
-                </div>
-            </div>
-
-            <!-- KONDISI RUSAK BERAT -->
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
-                </svg>
-
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Kondisi Rusak Berat</strong>
-                    </div>
-                    <span class="d-block">3 KM</span>
-                </div>
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark">Dalam %</strong>
-                    </div>
-                    <span class="d-block">25%</span>
-                </div>
-            </div>
         </div>
     </main>
 
