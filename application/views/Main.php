@@ -85,7 +85,7 @@
                     <td>Bojong Soang</td>
                     <td>
                         <a href="<?= base_url('main/data_jalan'); ?>" type="button" class="btn btn-primary">Lihat Data Jalan</a>
-                        <button type="button" class="btn btn-primary">Lihat Kegiatan</button>
+                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-primary">Lihat Kegiatan</a>
                     </td>
                 </tr>
                 <tr>
@@ -93,7 +93,7 @@
                     <td>Cijerah</td>
                     <td>
                         <a href="<?= base_url('main/data_jalan'); ?>" button type="button" class="btn btn-primary">Lihat Data Jalan</a>
-                        <button type="button" class="btn btn-primary">Lihat Kegiatan</button>
+                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-primary">Lihat Kegiatan</a>
                     </td>
                 </tr>
                 <tr>
@@ -101,7 +101,7 @@
                     <td>Margaasih</td>
                     <td>
                         <a href="<?= base_url('main/data_jalan'); ?>" button type="button" class="btn btn-primary">Lihat Data Jalan</a>
-                        <button type="button" class="btn btn-primary">Lihat Kegiatan</button>
+                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-primary">Lihat Kegiatan</a>
                     </td>
                 </tr>
             </tbody>
