@@ -103,7 +103,7 @@
         </div>
 
         <div class="my-3 p-3 bg-info rounded shadow-sm">
-            <h3 class="text-center border-bottom border-black pb-2 mb-0">BOJONG SOANG</h3>
+            <h3 class="text-center border-bottom border-black pb-2 mb-0">Data Kegiatan</h3>
         </div>
 
         <!-- PROFILE JALAN  -->
@@ -117,7 +117,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Nama Paket Kegiatan</strong>
-
+                Bojongsoang
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -139,7 +139,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Nilai Kontrak</strong>
-                    
+                2 M    
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -150,7 +150,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Volume Pekerjaan</strong>
-                
+                2 KM
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -161,7 +161,9 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Video Kegiatan</strong>
-                
+                </body>
+                    <iframe src="<?= base_url('assets/video/'); ?>jalan.mp4" width="" height="" alt=""></iframe>
+                </body>
                 </p>
                 </div>
             <div class="media text-muted pt-3">
@@ -172,7 +174,10 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Foto Kegiatan</strong>
-                
+                </body>
+                    <!-- <img src=‪"<?= base_url('assets/img/fotojalan.jpeg'); ?>"/> -->
+                    <img src="<?= base_url('assets/img/'); ?>fotojalan.jpeg" width="" height="" alt="">
+                </body>
                 </p>
         </div>
         </div>
