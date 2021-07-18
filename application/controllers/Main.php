@@ -29,4 +29,14 @@ class Main extends CI_Controller
         $this->load->view('data_jalan', $data);
         // $this->load->view('templates/footer', $data);
     }
+    public function data_kegiatan()
+    {
+        $data['title'] = 'kegiatan';
+        // $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        // $this->load->view('templates/header', $data);
+        // $this->load->view('templates/sidebar', $data);
+        // $this->load->view('templates/topbar', $data);
+        $this->load->view('data_kegiatan', $data);
+        // $this->load->view('templates/footer', $data);
+    }
 }
