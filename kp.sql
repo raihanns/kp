@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 13, 2021 at 10:05 AM
+-- Generation Time: Jul 18, 2021 at 06:34 PM
 -- Server version: 10.4.19-MariaDB
--- PHP Version: 8.0.7
+-- PHP Version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -45,7 +45,7 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
 (1, 'RAIHAN N SETIAWAN', 'raihan@raihan.com', 'material-logo1.png', '$2y$10$ERXIxgQnAnh1Kja1C6gpWOaFMMyFl/lXVMIF2N7XZVfk8vTaAOM0G', 2, 1, 1625591303),
 (2, 'tes', 'tes@tes.com', 'default.jpg', '$2y$10$hMox47ZUQ8oH93L0272OqehUlxilYcYAH7mcAqtkqruB4LVctlzLK', 2, 1, 1625548123),
-(4, 'admin', 'admin@admin.com', 'material-logo.png', '$2y$10$FvXArl7ob3uHefvu4Nk9x.UBmFWOJzIBf6cimIeSLEuYiQqtUaRiW', 1, 1, 1625548103);
+(4, 'admin', 'admin@admin.com', 'pemkab1.png', '$2y$10$FvXArl7ob3uHefvu4Nk9x.UBmFWOJzIBf6cimIeSLEuYiQqtUaRiW', 1, 1, 1625548103);
 
 -- --------------------------------------------------------
 
