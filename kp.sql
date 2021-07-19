@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 18, 2021 at 06:34 PM
+-- Generation Time: Jul 19, 2021 at 06:26 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -68,7 +68,9 @@ INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 (2, 1, 2),
 (3, 2, 2),
 (6, 1, 3),
-(9, 2, 5);
+(9, 2, 5),
+(18, 2, 7),
+(19, 2, 6);
 
 -- --------------------------------------------------------
 
@@ -88,7 +90,9 @@ CREATE TABLE `user_menu` (
 INSERT INTO `user_menu` (`id`, `menu`) VALUES
 (1, 'Admin'),
 (2, 'Member'),
-(3, 'Menu');
+(3, 'Menu'),
+(6, 'Data Jalan'),
+(7, 'Data Kegiatan');
 
 -- --------------------------------------------------------
 
@@ -136,8 +140,9 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 (5, 3, 'SubMenu Management', 'menu/submenu', 'fas fa-fw fa-folder-open', 1),
 (7, 1, 'Role', 'admin/role', 'fas fa-fw fa-user-tie', 1),
 (12, 2, 'Change Password', 'user/changepassword', 'fas fa-fw fa-key', 1),
-(13, 1, 'Tambah Data Jalan', 'admin/input_data', 'fas fa-fw fa-database', 1),
-(15, 1, 'Tambah Kegiatan', 'admin/tambah_kegiatan', 'fas fa-fw fa-search-location', 1);
+(13, 6, 'Tambah Data Jalan', 'admin/input_data', 'fas fa-fw fa-database', 1),
+(15, 7, 'Tambah Kegiatan', 'admin/tambah_kegiatan', 'fas fa-fw fa-search-location', 1),
+(16, 1, 'Tambah Admin', 'admin/add', 'fas fa-fw fa-user-plus', 1);
 
 --
 -- Indexes for dumped tables
@@ -187,13 +192,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `user_menu`
 --
 ALTER TABLE `user_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `user_role`
@@ -205,7 +210,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

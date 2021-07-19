@@ -117,7 +117,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Nama Paket Kegiatan</strong>
-                Bojongsoang
+                    Bojongsoang
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -128,7 +128,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Perusahaan</strong>
-                    
+
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -139,7 +139,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Nilai Kontrak</strong>
-                2 M    
+                    2 M
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -150,7 +150,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Volume Pekerjaan</strong>
-                2 KM
+                    2 KM
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -161,39 +161,38 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Video Kegiatan</strong>
-                </body>
-                    <iframe src="<?= base_url('assets/video/'); ?>jalan.mp4" width="" height="" alt=""></iframe>
-                </body>
+                    <iframe src="<?= base_url('assets/video/'); ?>jalan.mp4" width="400" height="400" alt=""></iframe>
                 </p>
-                </div>
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#6f42c1" /><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text>
-                </svg>
+            </div>
+</body>
+<div class="media text-muted pt-3">
+    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#6f42c1" /><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text>
+    </svg>
 
-                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">Foto Kegiatan</strong>
-                </body>
-                    <!-- <img src=‪"<?= base_url('assets/img/fotojalan.jpeg'); ?>"/> -->
-                    <img src="<?= base_url('assets/img/'); ?>fotojalan.jpeg" width="" height="" alt="">
-                </body>
-                </p>
-        </div>
-        </div>
-        </div>
-    </main>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-    </script>
-    <link href="<?= base_url(); ?>/assets/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <strong class="d-block text-gray-dark">Foto Kegiatan</strong>
+        </body>
+        <!-- <img src=‪"<?= base_url('assets/img/fotojalan.jpeg'); ?>"/> -->
+        <img src="<?= base_url('assets/img/'); ?>fotojalan.jpeg" width="700" height="400" alt="">
+        </body>
+    </p>
+</div>
+</div>
+</div>
+</main>
 
 
-    <script src="data_kegiatan.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>
+    window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+</script>
+<link href="<?= base_url(); ?>/assets/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script src="data_kegiatan.js"></script>
 </body>
 
 </html>
