@@ -158,6 +158,10 @@
                         </div>
                     </div>
                     </fieldset>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Dokumentasi Jalan</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
                 </form>
                 <!-- akhir form input -->
                 <input class="btn btn-primary mt-3" type="submit" value="Submit">
