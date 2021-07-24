@@ -79,6 +79,18 @@ class Admin extends CI_Controller
         $this->load->view('templates/footer', $data);
     }
 
+    public function tambah_admin()
+    {
+        $data['title'] = 'Tambah Admin';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('admin/tambah_Admin', $data);
+        $this->load->view('templates/footer', $data);
+    }
+
     public function roleAccess($role_id)
     {
 
