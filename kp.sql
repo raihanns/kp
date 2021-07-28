@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 19, 2021 at 06:26 AM
+-- Generation Time: Jul 28, 2021 at 12:02 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `kp`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jalan`
+--
+
+CREATE TABLE `jalan` (
+  `id` int(11) NOT NULL,
+  `jalan` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `jalan`
+--
+
+INSERT INTO `jalan` (`id`, `jalan`) VALUES
+(1, 'tes'),
+(4, 'BABAKAN CIKONENG');
 
 -- --------------------------------------------------------
 
@@ -70,7 +89,9 @@ INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 (6, 1, 3),
 (9, 2, 5),
 (18, 2, 7),
-(19, 2, 6);
+(19, 2, 6),
+(20, 1, 6),
+(21, 1, 7);
 
 -- --------------------------------------------------------
 
@@ -111,7 +132,8 @@ CREATE TABLE `user_role` (
 
 INSERT INTO `user_role` (`id`, `role`) VALUES
 (1, 'Administrator'),
-(2, 'Member');
+(2, 'Member'),
+(3, 'tes');
 
 -- --------------------------------------------------------
 
@@ -140,13 +162,19 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 (5, 3, 'SubMenu Management', 'menu/submenu', 'fas fa-fw fa-folder-open', 1),
 (7, 1, 'Role', 'admin/role', 'fas fa-fw fa-user-tie', 1),
 (12, 2, 'Change Password', 'user/changepassword', 'fas fa-fw fa-key', 1),
-(13, 6, 'Tambah Data Jalan', 'admin/input_data', 'fas fa-fw fa-database', 1),
-(15, 7, 'Tambah Kegiatan', 'admin/tambah_kegiatan', 'fas fa-fw fa-search-location', 1),
+(13, 6, 'Tambah Data Jalan', 'jalan/', 'fas fa-fw fa-road', 1),
+(15, 7, 'Tambah Kegiatan', 'jalan/kegiatan', 'fas fa-fw fa-search-location', 1),
 (16, 1, 'Tambah Admin', 'admin/add', 'fas fa-fw fa-user-plus', 1);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `jalan`
+--
+ALTER TABLE `jalan`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `user`
@@ -183,6 +211,12 @@ ALTER TABLE `user_sub_menu`
 --
 
 --
+-- AUTO_INCREMENT for table `jalan`
+--
+ALTER TABLE `jalan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
@@ -192,7 +226,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `user_menu`
@@ -204,13 +238,13 @@ ALTER TABLE `user_menu`
 -- AUTO_INCREMENT for table `user_role`
 --
 ALTER TABLE `user_role`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
