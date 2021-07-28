@@ -48,15 +48,23 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <div class="navbar-collapse data_jalan-collapse" id="navbarsExampleDefault">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+
     </nav>
 
     <main role="main" class="container">
         <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nama Jalan</th>
-                    <th scope="col">Aksi</th>
+                    <th scope="col">NO.</th>
+                    <th scope="col">NAMA JALAN</th>
+                    <th scope="col">AKSI</th>
                 </tr>
             </thead>
             <tbody>
@@ -64,24 +72,24 @@
                     <th scope="row">1</th>
                     <td>Bojong Soang</td>
                     <td>
-                        <a href="<?= base_url('main/data_jalan'); ?>" type="button" class="btn btn-primary">Lihat Data Jalan</a>
-                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-primary">Lihat Kegiatan</a>
+                        <a href="<?= base_url('main/data_jalan'); ?>" type="button" class="btn btn-info">Lihat Data Jalan</a>
+                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-info">Lihat Kegiatan</a>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
                     <td>Cijerah</td>
                     <td>
-                        <a href="<?= base_url('main/data_jalan'); ?>" button type="button" class="btn btn-primary">Lihat Data Jalan</a>
-                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-primary">Lihat Kegiatan</a>
+                        <a href="<?= base_url('main/data_jalan'); ?>" button type="button" class="btn btn-info">Lihat Data Jalan</a>
+                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-info">Lihat Kegiatan</a>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td>Margaasih</td>
                     <td>
-                        <a href="<?= base_url('main/data_jalan'); ?>" button type="button" class="btn btn-primary">Lihat Data Jalan</a>
-                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-primary">Lihat Kegiatan</a>
+                        <a href="<?= base_url('main/data_jalan'); ?>" button type="button" class="btn btn-info">Lihat Data Jalan</a>
+                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-info">Lihat Kegiatan</a>
                     </td>
                 </tr>
             </tbody>
