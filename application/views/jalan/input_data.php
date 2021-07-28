@@ -10,12 +10,12 @@
 
             <!-- Card Body -->
             <div class="card-body">
-                <h4 style="text-align: center; padding-top: 30px">BABAKAN CIKONENG - BATU KUDA</h4>
+                <h4 style="text-align: center; padding-top: 30px"><?= $jalan['jalan']; ?></h4>
                 <form>
 
                     <div class="mb-2">
                         <label for="ruasjalan" class="form-label">No Ruas Jalan</label>
-                        <input type="text" class="form-control" id="ruasjalan" />
+                        <input type="text" class="form-control" id="ruasjalan" name="" value="<?= $jalan['id']; ?>" disabled />
                     </div>
                     <div class="mb-2">
                         <label for="namaruasjalan" class="form-label">Nama Ruas Jalan</label>
@@ -54,7 +54,7 @@
                         <div class="col">
                             <div class="mb-2">
                                 <label for="aspal%" class="form-label">Jenis Perkerasan Aspal(%)</label>
-                                <input type="text" class="form-control" id="aspal%" />
+                                <input type="text" class="form-control" id="aspal%" disabled />
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                         <div class="col">
                             <div class="mb-2">
                                 <label for="beton%" class="form-label">Jenis Perkerasan Beton(%)</label>
-                                <input type="text" class="form-control" id="beton%" />
+                                <input type="text" class="form-control" id="beton%" disabled />
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                         <div class="col">
                             <div class="mb-2">
                                 <label for="kerikil%" class="form-label">Jenis Perkerasan Kerikil(%)</label>
-                                <input type="text" class="form-control" id="kerikil%" />
+                                <input type="text" class="form-control" id="kerikil%" disabled />
                             </div>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                         <div class="col">
                             <div class="mb-2">
                                 <label for="tanah%" class="form-label">Jenis Perkerasan Tanah/Belum Tembus(%)</label>
-                                <input type="text" class="form-control" id="tanah%" />
+                                <input type="text" class="form-control" id="tanah%" disabled />
                             </div>
                         </div>
                     </div>

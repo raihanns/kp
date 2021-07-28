@@ -3,9 +3,11 @@
 
     <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
+    <h3 class="h5 text-gray-800">Nama Jalan: <?= $jalan['jalan']; ?></h3>
     <form>
         <div class="row">
             <div class="col-lg-5">
+
                 <div class="mb-2">
                     <label for="ruasjalan" class="form-label">Nama Paket Kegiatan</label>
                     <input type="text" class="form-control" id="ruasjalan" />

@@ -55,29 +55,6 @@ class Admin extends CI_Controller
         }
     }
 
-    public function input_data()
-    {
-        $data['title'] = 'Input Data Jalan';
-        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
-        $this->load->view('templates/header', $data);
-        $this->load->view('templates/sidebar', $data);
-        $this->load->view('templates/topbar', $data);
-        $this->load->view('admin/input_data', $data);
-        $this->load->view('templates/footer', $data);
-    }
-
-    public function tambah_kegiatan()
-    {
-        $data['title'] = 'Tambah Kegiatan';
-        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
-        $this->load->view('templates/header', $data);
-        $this->load->view('templates/sidebar', $data);
-        $this->load->view('templates/topbar', $data);
-        $this->load->view('admin/tambah_kegiatan', $data);
-        $this->load->view('templates/footer', $data);
-    }
 
     public function roleAccess($role_id)
     {
