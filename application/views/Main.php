@@ -44,12 +44,20 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">DINAS PEKERJAAN UMUM DAN TATA RUANG </a>
+        <a class="navbar-brand" href="#">
+            <img src="<?= base_url('assets/img/'); ?>pemkab.png" width="70" height="70" alt="">
+        </a>
+        <div class="col">
+            <a class="navbar-brand" href="#" style="font-size: medium;">PEMERINTAH KABUPATEN BANDUNG</a> <br>
+            <a class="navbar-brand" href="#" style="font-size: medium;">DINAS PEKERJAAN UMUM DAN TATA RUANG</a> <br>
+            <a class=" navbar-brand" href="#" style="font-size: medium;">Jl. Raya Soreang-Banjaran KM.3 Kabupaten Bandung <br>Telp. (022) 5892580</a> <br>
+        </div>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse data_jalan-collapse" id="navbarsExampleDefault">
+        <div class="navbar navbar-light justify-content-between" id="navbarsExampleDefault">
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -57,6 +65,7 @@
         </div>
 
     </nav>
+    <br><br><br>
 
     <main role="main" class="container">
         <table class="table">
