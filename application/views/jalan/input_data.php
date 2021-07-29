@@ -12,7 +12,8 @@
             <div class="card-body">
                 <h4 style="text-align: center; padding-top: 30px"><?= $jalan['jalan']; ?></h4>
                 <form>
-
+                    <h4>DATA RUAS JALAN</h4>
+                    <br>
                     <div class="mb-2">
                         <label for="ruasjalan" class="form-label">No Ruas Jalan</label>
                         <input type="text" class="form-control" id="ruasjalan" name="" value="<?= $jalan['id']; ?>" disabled />
@@ -41,20 +42,14 @@
                     </div>
                     </fieldset>
                     <div style="text-align: left; padding-top: 30px">
-                        <h4>Kondisi Jalan</h4>
+                        <h4>JENIS PERKERASAN</h4>
                     </div>
-
+                    <br>
                     <div class="row g-3">
                         <div class="col">
                             <div class="mb-2">
                                 <label for="aspalkm" class="form-label">Jenis Perkerasan Aspal(KM)</label>
                                 <input type="text" class="form-control" id="aspalkm" />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="aspal%" class="form-label">Jenis Perkerasan Aspal(%)</label>
-                                <input type="text" class="form-control" id="aspal%" disabled />
                             </div>
                         </div>
                     </div>
@@ -65,12 +60,7 @@
                                 <input type="text" class="form-control" id="betonkm" />
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="beton%" class="form-label">Jenis Perkerasan Beton(%)</label>
-                                <input type="text" class="form-control" id="beton%" disabled />
-                            </div>
-                        </div>
+
                     </div>
                     <div class="row g-3">
                         <div class="col">
@@ -79,12 +69,7 @@
                                 <input type="text" class="form-control" id="kerikilkm" />
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="kerikil%" class="form-label">Jenis Perkerasan Kerikil(%)</label>
-                                <input type="text" class="form-control" id="kerikil%" disabled />
-                            </div>
-                        </div>
+
                     </div>
                     <div class="row g-3">
                         <div class="col">
@@ -93,13 +78,12 @@
                                 <input type="text" class="form-control" id="tanahkm" />
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="tanah%" class="form-label">Jenis Perkerasan Tanah/Belum Tembus(%)</label>
-                                <input type="text" class="form-control" id="tanah%" disabled />
-                            </div>
-                        </div>
+
                     </div>
+                    <div style="text-align: left; padding-top: 30px">
+                        <h4>KONDISI JALAN</h4>
+                    </div>
+                    <br>
                     <div class="row g-3">
                         <div class="col">
                             <div class="mb-2">
@@ -107,12 +91,7 @@
                                 <input type="text" class="form-control" id="baikkm" />
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="baik%" class="form-label">Kondisi Baik(%)</label>
-                                <input type="text" class="form-control" id="baik%" />
-                            </div>
-                        </div>
+
                     </div>
 
                     <div class="row g-3">
@@ -122,12 +101,7 @@
                                 <input type="text" class="form-control" id="sedangkm" />
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="sedang%" class="form-label">Kondisi Sedang(%)</label>
-                                <input type="text" class="form-control" id="sedang%" />
-                            </div>
-                        </div>
+
                     </div>
                     <div class="row g-3">
                         <div class="col">
@@ -136,12 +110,7 @@
                                 <input type="text" class="form-control" id="ringankm" />
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="ringankm%" class="form-label">Kondisi Rusak Ringan(%)</label>
-                                <input type="text" class="form-control" id="ringankm%" />
-                            </div>
-                        </div>
+
                     </div>
                     <div class="row g-3">
                         <div class="col">
@@ -150,12 +119,7 @@
                                 <input type="text" class="form-control" id="beratkm" />
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="berat%" class="form-label">Kondisi Rusak Berat(%)</label>
-                                <input type="text" class="form-control" id="berat%" />
-                            </div>
-                        </div>
+
                     </div>
                     </fieldset>
                     <div class="form-group">
