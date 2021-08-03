@@ -21,6 +21,16 @@ class M_Auth extends CI_model
     {
         return $this->db->get('user')->result_array();
     }
+    public function getAllUserRole()
+    {
+        $query = "SELECT `user`.*, `user_role`.`role`
+                    FROM `user` JOIN `user_role`
+                    ON `user`.`role_id` = `user_role`.`id`
+            ";
+        return $this->db->query($query)->result_array();
+    }
+
+
 
     public function editUser($id)
     {
