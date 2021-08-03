@@ -16,7 +16,7 @@
                     <br>
                     <div class="mb-2">
                         <label for="ruasjalan" class="form-label">No Ruas Jalan</label>
-                        <input type="text" class="form-control" id="ruasjalan" name="" value="<?= $jalan['id']; ?>" disabled />
+                        <input type="text" class="form-control" id="ruasjalan" name="">
                     </div>
                     <div class="mb-2">
                         <label for="namaruasjalan" class="form-label">Nama Ruas Jalan</label>
@@ -96,7 +96,7 @@
                         </div>
                         <div class="col">
                             <div class="mb-2">
-                                <label for="tanah%" class="form-label">Jenis Perkerasan Tanah/Belum Tembus(%Meter)</label>
+                                <label for="tanah%" class="form-label">Jenis Perkerasan Tanah/Belum Tembus(Meter)</label>
                                 <input type="text" class="form-control" id="tanah%" />
                             </div>
                         </div>
