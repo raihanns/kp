@@ -62,7 +62,7 @@
                     <div class="row g-3">
                         <div class="col">
                             <div class="mb-2">
-                                <label for="betonkm" class="form-label">Jenis Perkerasan Beton(Meter)</label>
+                                <label for="betonkm" class="form-label">Jenis Perkerasan Beton(KM)</label>
                                 <input type="text" class="form-control" id="betonkm" />
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                     <div class="row g-3">
                         <div class="col">
                             <div class="mb-2">
-                                <label for="beratkm" class="form-label">Kondisi Rusak Berat(Meter)</label>
+                                <label for="beratkm" class="form-label">Kondisi Rusak Berat(KM)</label>
                                 <input type="text" class="form-control" id="beratkm" />
                             </div>
                         </div>
