@@ -19,6 +19,8 @@
     <style>
         body {
             background-image: url('<?= base_url('assets/img/bg.svg'); ?>');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .bd-placeholder-img {

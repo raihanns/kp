@@ -17,6 +17,12 @@
     <link href="<?= base_url(); ?>/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+        body {
+            background-image: url('<?= base_url('assets/img/bg.svg'); ?>');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -33,7 +39,6 @@
         }
     </style>
 
-
     <!-- Custom styles for this template -->
     <link href="data_kegiatan.css" rel="stylesheet">
 </head>
@@ -41,7 +46,7 @@
 <body class="bg-light">
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand mr-auto mr-lg-0" href="#">HOME</a>
+        <a class="navbar-brand mr-auto mr-lg-0" href="<?= base_url('main'); ?>">HOME</a>
         <button class="navbar-toggler p-0 border-0" type="button" data-toggle="data_kegiatan">
             <span class="navbar-toggler-icon"></span>
         </button>
