@@ -51,30 +51,14 @@
             <a class="navbar-brand" href="#" style="font-size: medium;">PEMERINTAH KABUPATEN BANDUNG</a> <br>
             <a class="navbar-brand" href="#" style="font-size: medium;">DINAS PEKERJAAN UMUM DAN TATA RUANG</a> <br> -->
         <!-- <a class="navbar-nav ml-auto" href="#" style="font-size: medium;">Jl. Raya Soreang-Banjaran KM.3 Kabupaten Bandung <br>Telp. (022) 5892580</a> <br> -->
-        <table>
-            <tbody>
-                <tr>
-                    <td style="color: white;">
-                        PEMERINTAH KABUPATEN BANDUNG
-                    </td>
-                </tr>
-                <tr>
-                    <td style="color: white;">
-                        DINAS PEKERJAAN UMUM DAN TATA RUANG
-                    </td>
-                </tr>
-                <tr>
-                    <td style="color: white;">
-                        Jl. Raya Soreang-Banjaran KM.3 Kabupaten Bandung
-                    </td>
-                </tr>
-                <tr>
-                    <td style="color: white;">
-                        Telp. (022) 5892580
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+
+        <div class="lh-100">
+            <h6 class="mb-0 text-center-Black lh-100" style="color: white;"> PEMERINTAH KABUPATEN BANDUNG</h6>
+            <h6 class="mb-0 text-center-Black lh-100" style="color: white;"> DINAS PEKERJAAN UMUM DAN TATA RUANG</h6>
+            <small style="color: white;"> Jl. Raya Soreang-Banjaran KM.3 Kabupaten Bandung</small>
+            <small style="color: white;"> (022) 5892580</small>
+        </div>
+
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -83,7 +67,7 @@
 
 
     </nav>
-    <br><br>
+    <br>
 
     <main role="main" class="container">
         <table class="table">
