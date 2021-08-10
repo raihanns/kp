@@ -85,30 +85,18 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Bojong Soang</td>
-                    <td>
-                        <a href="<?= base_url('main/data_jalan'); ?>" type="button" class="btn btn-info">Lihat Data Jalan</a>
-                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-info">Lihat Kegiatan</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Cijerah</td>
-                    <td>
-                        <a href="<?= base_url('main/data_jalan'); ?>" button type="button" class="btn btn-info">Lihat Data Jalan</a>
-                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-info">Lihat Kegiatan</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Margaasih</td>
-                    <td>
-                        <a href="<?= base_url('main/data_jalan'); ?>" button type="button" class="btn btn-info">Lihat Data Jalan</a>
-                        <a href="<?= base_url('main/data_kegiatan'); ?>" type="button" class="btn btn-info">Lihat Kegiatan</a>
-                    </td>
-                </tr>
+                <?php $i = 1; ?>
+                <?php foreach ($jalan as $j) : ?>
+                    <tr>
+                        <th scope="row"><?= $i; ?></th>
+                        <td><?= $j['jalan']; ?></td>
+                        <td>
+                            <a href="<?= base_url('main/data_jalan/' . $j['id']); ?>" type="button" class="btn btn-info">Lihat Data Jalan</a>
+                            <a href="<?= base_url('main/data_kegiatan/' . $j['id']); ?>" type="button" class="btn btn-info">Lihat Kegiatan</a>
+                        </td>
+                    </tr>
+                    <?php $i++; ?>
+                <?php endforeach; ?>
             </tbody>
         </table>
 
