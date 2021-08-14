@@ -77,8 +77,9 @@
         <div class="d-flex align-items-center p-3 my-3 text-black-50 bg-light rounded shadow-sm">
             <img src="<?= base_url('assets/img/'); ?>pemkab.png" alt="" width="48" height="48">
             <div class="lh-100">
-                <h4 class="mb-0 text-center-Black lh-100 ">DINAS PEKERJAAN UMUM DAN TATA RUANG</h4>
-                <medium>SOREANG</medium>
+                <h6 class="mb-0 text-center-Black lh-100 ">PEMERINTAH KABUPATEN BANDUNG</h6>
+                <h6 class="mb-0 text-center-Black lh-100 ">DINAS PEKERJAAN UMUM DAN TATA RUANG</h6>
+                <small>Jl. Raya Soreang-Banjaran KM.3 Kabupaten Bandung (022) 5892580</small>
             </div>
         </div>
 
@@ -97,7 +98,16 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">No Ruas Jalan</strong>
-                    00001152711
+                    <?= $jalan['no_ruas']; ?>
+                </p>
+                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <<rect width="100%" height="100%" fill="#2a9d8f" /><text x="50%" y="50%" fill="#ffffff" dy=".3em">5</text>
+                </svg>
+
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">Panjang</strong>
+                    <?= $jalan['panjang']; ?>
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -108,7 +118,16 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Nama Ruas Jalan</strong>
-                    Bojong Soang
+                    <?= $jalan['jalan']; ?>
+                </p>
+                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#2a9d8f" /><text x="50%" y="50%" fill="#ffffff" dy=".3em">6</text>
+                </svg>
+
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">Lebar</strong>
+                    <?= $jalan['lebar']; ?>
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -119,7 +138,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Kecamatan</strong>
-                    Bojong Soang
+                    <?= $jalan['kecamatan']; ?>
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -130,27 +149,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Desa</strong>
-                    Dayeuh Kolot
-                </p>
-            </div>
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <<rect width="100%" height="100%" fill="#2a9d8f" /><text x="50%" y="50%" fill="#ffffff" dy=".3em">5</text>
-                </svg>
-
-                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">Panjang</strong>
-                    2 KM
-                </p>
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#2a9d8f" /><text x="50%" y="50%" fill="#ffffff" dy=".3em">6</text>
-                </svg>
-
-                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">Lebar</strong>
-                    2.5 M
+                    <?= $jalan['desa']; ?>
                 </p>
             </div>
         </div>
@@ -167,7 +166,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Jenis Aspal</strong>
                     </div>
-                    <span class="d-block">2 KM</span>
+                    <span class="d-block"><?= $jalan['aspal']; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -179,7 +178,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Jenis Beton</strong>
                     </div>
-                    <span class="d-block">2 KM</span>
+                    <span class="d-block"><?= $jalan['beton']; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -191,7 +190,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Jenis Kerikil</strong>
                     </div>
-                    <span class="d-block">2 KM</span>
+                    <span class="d-block"><?= $jalan['kerikil']; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -203,7 +202,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Jenis Tanah</strong>
                     </div>
-                    <span class="d-block">2 KM</span>
+                    <span class="d-block"><?= $jalan['tanah_belum']; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -226,7 +225,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Kondisi Baik</strong>
                     </div>
-                    <span class="d-block">3 KM</span>
+                    <span class="d-block"><?= $jalan['baik']; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -238,7 +237,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Kondisi Sedang</strong>
                     </div>
-                    <span class="d-block">3 KM</span>
+                    <span class="d-block"><?= $jalan['sedang']; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -250,7 +249,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Rusak Ringan</strong>
                     </div>
-                    <span class="d-block">3 KM</span>
+                    <span class="d-block"><?= $jalan['rusak_ringan']; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -262,7 +261,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Rusak Berat</strong>
                     </div>
-                    <span class="d-block">3 KM</span>
+                    <span class="d-block"><?= $jalan['rusak_berat']; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
