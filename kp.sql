@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 28, 2021 at 12:02 PM
+-- Generation Time: Aug 14, 2021 at 07:02 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -29,16 +29,32 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `jalan` (
   `id` int(11) NOT NULL,
-  `jalan` varchar(255) NOT NULL
+  `jalan` varchar(255) DEFAULT NULL,
+  `no_ruas` varchar(64) DEFAULT NULL,
+  `kecamatan` varchar(128) DEFAULT NULL,
+  `desa` varchar(128) DEFAULT NULL,
+  `panjang` int(8) DEFAULT NULL,
+  `lebar` int(8) DEFAULT NULL,
+  `aspal` int(8) DEFAULT NULL,
+  `beton` int(8) DEFAULT NULL,
+  `kerikil` int(8) DEFAULT NULL,
+  `tanah_belum` int(8) DEFAULT NULL,
+  `baik` int(8) DEFAULT NULL,
+  `sedang` int(8) DEFAULT NULL,
+  `rusak_ringan` int(8) DEFAULT NULL,
+  `rusak_berat` int(8) DEFAULT NULL,
+  `dokumentasi` varchar(256) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `jalan`
 --
 
-INSERT INTO `jalan` (`id`, `jalan`) VALUES
-(1, 'tes'),
-(4, 'BABAKAN CIKONENG');
+INSERT INTO `jalan` (`id`, `jalan`, `no_ruas`, `kecamatan`, `desa`, `panjang`, `lebar`, `aspal`, `beton`, `kerikil`, `tanah_belum`, `baik`, `sedang`, `rusak_ringan`, `rusak_berat`, `dokumentasi`) VALUES
+(4, 'BABAKAN CIKONENG', '123', '123', '123', 12, 12, 0, 12, 0, 0, 0, 0, 0, 0, 'tes.jpg'),
+(6, 'Bojongsoang', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(7, 'Cijerah', '1231', 'tes ', 'yo', 12, 12, 0, 2, 3, 4, 5, 6, 7, 8, 'tes.jpg'),
+(8, 'Sumbawa', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -62,9 +78,13 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(1, 'RAIHAN N SETIAWAN', 'raihan@raihan.com', 'material-logo1.png', '$2y$10$ERXIxgQnAnh1Kja1C6gpWOaFMMyFl/lXVMIF2N7XZVfk8vTaAOM0G', 2, 1, 1625591303),
+(1, 'RAIHAN N SETIAWAN', 'raihan@raihan.com', 'material-logo1.png', '$2y$10$ERXIxgQnAnh1Kja1C6gpWOaFMMyFl/lXVMIF2N7XZVfk8vTaAOM0G', 4, 1, 1625591303),
 (2, 'tes', 'tes@tes.com', 'default.jpg', '$2y$10$hMox47ZUQ8oH93L0272OqehUlxilYcYAH7mcAqtkqruB4LVctlzLK', 2, 1, 1625548123),
-(4, 'admin', 'admin@admin.com', 'pemkab1.png', '$2y$10$FvXArl7ob3uHefvu4Nk9x.UBmFWOJzIBf6cimIeSLEuYiQqtUaRiW', 1, 1, 1625548103);
+(4, 'admin', 'admin@admin.com', 'pemkab1.png', '$2y$10$FvXArl7ob3uHefvu4Nk9x.UBmFWOJzIBf6cimIeSLEuYiQqtUaRiW', 1, 1, 1625548103),
+(10, 'tes123', 'tes@tes123.com', 'default.jpg', '$2y$10$RZXwmbQEYKO6ojTctW9.WeGD7tlf14wzXws0in6FzJRc5vjK6jTMe', 2, 1, 1627961252),
+(11, '123', '123@123.com', 'default.jpg', '$2y$10$ivO2FQCKzJJk4uojZYoznuzvpfXg6nk9KNetQMjPwo/UXmWkUxSLy', 3, 1, 1627961777),
+(12, 'tes', '123@1232.com', 'default.jpg', '$2y$10$lXb/EzHUuy7mrmv80zKKRev7vQBHd/W4qHg1ey/UjiRwwuRLs17FK', 1, 1, 1627961901),
+(13, 'ayoo', 'tes@tes2.com', 'default.jpg', '$2y$10$if38tDkLtURfdn2fMA8ayOt.Ah2jvGbjxgKUcePLkiwC4PDS6pVb2', 1, 1, 1627963630);
 
 -- --------------------------------------------------------
 
@@ -88,10 +108,14 @@ INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 (3, 2, 2),
 (6, 1, 3),
 (9, 2, 5),
-(18, 2, 7),
 (19, 2, 6),
 (20, 1, 6),
-(21, 1, 7);
+(21, 1, 7),
+(22, 2, 7),
+(25, 3, 6),
+(26, 3, 2),
+(27, 4, 7),
+(29, 4, 2);
 
 -- --------------------------------------------------------
 
@@ -131,9 +155,10 @@ CREATE TABLE `user_role` (
 --
 
 INSERT INTO `user_role` (`id`, `role`) VALUES
-(1, 'Administrator'),
-(2, 'Member'),
-(3, 'tes');
+(1, 'Super Admin'),
+(2, 'Admin'),
+(3, 'Adm Data Jalan'),
+(4, 'Adm Data Kegiatan');
 
 -- --------------------------------------------------------
 
@@ -214,19 +239,19 @@ ALTER TABLE `user_sub_menu`
 -- AUTO_INCREMENT for table `jalan`
 --
 ALTER TABLE `jalan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `user_menu`
@@ -238,7 +263,7 @@ ALTER TABLE `user_menu`
 -- AUTO_INCREMENT for table `user_role`
 --
 ALTER TABLE `user_role`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `user_sub_menu`
