@@ -7,37 +7,37 @@
     <div class="row">
         <div class="col-lg">
 
-
+            <?= $this->session->flashdata('message'); ?>
             <!-- Card Body -->
             <div class="card-body">
                 <h4 style="text-align: center; padding-top: 30px"><?= $jalan['jalan']; ?></h4>
-                <form>
+                <form action="<?= base_url('jalan/input_data/' . $jalan['id']); ?>" method="POST">
                     <h4>DATA RUAS JALAN</h4>
                     <br>
                     <div class="mb-2">
                         <label for="ruasjalan" class="form-label">No Ruas Jalan</label>
-                        <input type="text" class="form-control" id="ruasjalan" name="">
+                        <input type="text" class="form-control" id="no_ruas" name="no_ruas">
                     </div>
                     <div class="mb-2">
                         <label for="namaruasjalan" class="form-label">Nama Ruas Jalan</label>
-                        <input type="text" class="form-control" id="namaruasjalan" />
+                        <input type="text" class="form-control" id="jalan" name="jalan" value="<?= $jalan['jalan']; ?>" />
                     </div>
                     <div class="mb-2">
                         <label for="kecamatan" class="form-label">Kecamatan</label>
-                        <input type="text" class="form-control" id="kecamatan" />
+                        <input type="text" class="form-control" id="kecamatan" name="kecamatan" />
                     </div>
                     <div class="mb-2">
                         <label for="desa" class="form-label">Desa</label>
-                        <input type="text" class="form-control" id="desa" />
+                        <input type="text" class="form-control" id="desa" name="desa" />
                     </div>
                     <div class="row g-3">
                         <div class="col">
-                            <label for="panjang">Panjang</label>
-                            <input type="text" class="form-control" id="panjang" />
+                            <label for="panjang">Panjang (KM)</label>
+                            <input type="text" class="form-control" id="panjang" name="panjang" />
                         </div>
                         <div class="col">
-                            <label for="lebar">Lebar</label>
-                            <input type="text" class="form-control" id="lebar" />
+                            <label for="lebar">Lebar (M)</label>
+                            <input type="text" class="form-control" id="lebar" name="lebar" />
                         </div>
                     </div>
                     </fieldset>
@@ -93,12 +93,12 @@
                     </fieldset>
                     <br>
                     <div class="form-group">
-                        <h4 for="exampleFormControlFile1">Dokumentasi Jalan</h4>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <label for="exampleFormControlFile1">Dokumentasi Jalan</label>
+                        <input type="file" class="form-control-file" id="dokumentasi">
                     </div>
+                    <input class="btn btn-primary mt-3" type="submit" value="Submit">
                 </form>
                 <!-- akhir form input -->
-                <input class="btn btn-primary mt-3" type="submit" value="Submit">
             </div>
 
         </div>

@@ -28,7 +28,7 @@
                             <td>
                                 <!-- <a class="btn btn-warning" href="#" role="button">Edit</a> -->
                                 <a href="<?= base_url('jalan/input_kegiatan/' . $j['id']); ?>" class="btn btn-warning btn-sm"><i class="fas fa-plus"></i></a>
-                                <a href="<?= base_url('jalan/deleteKegiatan/') . $j['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus data ini?');"><i class="fas fa-trash-alt"></i></a>
+                                <!-- <a href="" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus data ini?');"><i class="fas fa-trash-alt"></i></a> -->
 
                             </td>
                         </tr>

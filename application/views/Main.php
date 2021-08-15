@@ -85,18 +85,22 @@
                 </tr>
             </thead>
             <tbody>
-                <?php $i = 1; ?>
-                <?php foreach ($jalan as $j) : ?>
-                    <tr>
-                        <th scope="row"><?= $i; ?></th>
-                        <td><?= $j['jalan']; ?></td>
-                        <td>
-                            <a href="<?= base_url('main/data_jalan/' . $j['id']); ?>" type="button" class="btn btn-info">Lihat Data Jalan</a>
-                            <a href="<?= base_url('main/data_kegiatan/' . $j['id']); ?>" type="button" class="btn btn-info">Lihat Kegiatan</a>
-                        </td>
-                    </tr>
-                    <?php $i++; ?>
-                <?php endforeach; ?>
+                <tr>
+                    <?php $i = 1; ?>
+                    <?php foreach ($jalan as $j) : ?>
+                <tr>
+                    <th scope="row"><?= $i; ?></th>
+                    <td><?= $j['jalan']; ?></td>
+                    <td>
+                        <!-- <a class="btn btn-warning" href="#" role="button">Edit</a> -->
+                        <a href="<?= base_url('main/data_jalan/' . $j['id']); ?>" class="btn btn-warning btn-sm">Lihat Data Jalan</i></a>
+                        <a href="<?= base_url('main/data_kegiatan/') . $j['id']; ?>" class="btn btn-danger btn-sm">Lihat Data Kegiatan</a>
+
+                    </td>
+                </tr>
+                <?php $i++; ?>
+            <?php endforeach; ?>
+
             </tbody>
         </table>
 

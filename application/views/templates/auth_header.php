@@ -27,6 +27,14 @@
             <img src="<?= base_url('assets/img/'); ?>pemkab.png" width="70" height="70" alt="">
         </a>
 
-        <h5 class="nav-link mt-2">DINAS PEKERJAAN UMUM DAN TATA RUANG</h5>
+        <h5 class="nav-link mt-2">PEMERINTAH KABUPATEN BANDUNG DINAS PEKERJAAN UMUM DAN TATA RUANG</h5>
+
+        <div>
+            <small>Jl. Raya Soreang - Banjaran KM 3 Kabupaten Bandung</small>
+        </div>
+        <div>
+
+            <small>Telp: (022) 589 2580</small>
+        </div>
 
     </nav>
