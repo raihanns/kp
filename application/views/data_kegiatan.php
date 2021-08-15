@@ -109,7 +109,7 @@
         </div>
 
         <div class="my-3 p-3 bg-info rounded shadow-sm">
-            <h3 class="text-center border-bottom border-black pb-2 mb-0">Data Kegiatan</h3>
+            <h3 class="text-center border-bottom border-black pb-2 mb-0"><?= $jalan['jalan']; ?></h3>
         </div>
 
         <!-- PROFILE JALAN  -->
@@ -123,7 +123,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Nama Kegiatan</strong>
-                    Bojongsoang
+                    <?= $jalan['kegiatan']; ?>
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -134,7 +134,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Perusahaan</strong>
-
+                    <?= $jalan['perusahaan']; ?>
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -145,7 +145,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Nilai Kontrak</strong>
-                    2 M
+                    <?= $jalan['kontrak']; ?>
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -156,7 +156,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Jangka Waktu Pelaksanaan</strong>
-                    3 bulan
+                    <?= $jalan['jangka']; ?>
                 </p>
             </div>
 </body>

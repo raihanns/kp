@@ -120,7 +120,6 @@ class Jalan extends CI_Controller
                 'foto_kegiatan' => 'foto.jpg',
                 'video_kegiatan' => 'video.mp4',
             ];
-
             $this->db->where('id', $id);
             $this->db->update('jalan', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close">

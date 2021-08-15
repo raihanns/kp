@@ -127,7 +127,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Lebar</strong>
-                    <?= $jalan['lebar'] . ' M'; ?>
+                    <?= $jalan['lebar']; ?>
                 </p>
             </div>
             <div class="media text-muted pt-3">

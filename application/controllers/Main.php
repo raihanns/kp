@@ -26,9 +26,10 @@ class Main extends CI_Controller
         $data['panjang'] = $this->db->select_sum('panjang')->get('jalan')->row('panjang');
         $this->load->view('data_jalan', $data);
     }
-    public function data_kegiatan()
+    public function data_kegiatan($id)
     {
         $data['title'] = 'kegiatan';
+        $data['jalan'] = $this->db->get_where('jalan', ['id' => $id])->row_array();
         $this->load->view('data_kegiatan', $data);
     }
 }
