@@ -73,38 +73,46 @@
     <main role="main" class="container my-3 p-3 bg-light rounded shadow-sm">
         <table class="table">
             <thead class="thead-dark">
+                <h5>Hasil: <?= $total_rows; ?></h5>
                 <tr>
                     <th scope="col">NO.</th>
-                    <th scope="col">NAMA JALAN</th>
-                    <th scope="col">AKSI</th>
+                    <th scope="col" width="600px">NAMA JALAN</th>
+                    <!-- <th scope="col">AKSI</th> -->
                     <th scope="col">
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <form class="form-inline" action="<?= base_url('main'); ?>" method="post">
+                            <input class="form-control mr-sm-2" name="keyword" type="text" placeholder="Cari Jalan.." autocomplete="false">
+                            <input class="btn btn-outline-success my-2 my-sm-0" name="submit" type="submit">
+
                         </form>
                     </th>
                 </tr>
             </thead>
             <tbody>
+
                 <tr>
-                    <?php $i = 1; ?>
-                    <?php foreach ($jalan as $j) : ?>
+                    <?php foreach ($jalan->result() as $row) : ?>
                 <tr>
-                    <th scope="row"><?= $i; ?></th>
-                    <td><?= $j['jalan']; ?></td>
+                    <th scope="row"><?= ++$page ?></th>
+                    <td><?php echo $row->jalan; ?></td>
                     <td>
                         <!-- <a class="btn btn-warning" href="#" role="button">Edit</a> -->
-                        <a href="<?= base_url('main/data_jalan/' . $j['id']); ?>" class="btn btn-warning btn-sm">Lihat Data Jalan</i></a>
-                        <a href="<?= base_url('main/data_kegiatan/') . $j['id']; ?>" class="btn btn-danger btn-sm">Lihat Data Kegiatan</a>
+                        <a href="<?= base_url('main/data_jalan/' . $row->id); ?>" class="btn btn-warning btn-sm">Lihat Data Jalan</i></a>
+                        <a href="<?= base_url('main/data_kegiatan/') . $row->id; ?>" class="btn btn-danger btn-sm">Lihat Data Kegiatan</a>
 
                     </td>
                 </tr>
-                <?php $i++; ?>
             <?php endforeach; ?>
 
             </tbody>
         </table>
-
+        <?php if (empty($jalan->result())) : ?>
+            <div class="alert alert-danger text-center" role="alert">
+                DATA TIDAK DITEMUKAN!
+            </div>
+        <?php endif; ?>
+        <?php
+        echo $pagination;
+        ?>
     </main>
 
 

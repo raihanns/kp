@@ -33,4 +33,23 @@ class M_Jalan extends CI_model
         $this->db->where('id', $id);
         $this->db->update('jalan', $data);
     }
+
+    function data($number, $offset)
+    {
+        return $query = $this->db->get('jalan', $number, $offset)->result();
+    }
+
+    function jumlah_data()
+    {
+        return $this->db->get('jalan')->num_rows();
+    }
+
+    function get_jalan_list($limit, $start, $keyword = null)
+    {
+        if ($keyword) {
+            $this->db->like('jalan', $keyword);
+        }
+        $query = $this->db->get('jalan', $limit, $start);
+        return $query;
+    }
 }
