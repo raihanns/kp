@@ -49,6 +49,25 @@ class Jalan extends CI_Controller
             $this->load->view('jalan/input_data', $data);
             $this->load->view('templates/footer', $data);
         } else {
+            $upload_image = $_FILES['image']['name'];
+            if ($upload_image) {
+                $config['allowed_types'] = 'jpg|png';
+                $config['max_size'] = 2048;
+                $config['upload_path'] = './assets/img/dokumentasi/';
+                $this->load->library('upload', $config);
+
+                if ($this->upload->do_upload('image')) {
+                    $old_image = $data['user']['image'];
+                    if ($old_image != 'default.jpg') {
+                        unlink(FCPATH . 'assets/img/profile/' . $old_image);
+                    }
+                    $new_image = $this->upload->data('file_name');
+                    $this->db->set('dokumentasi', $new_image);
+                } else {
+                    echo $this->upload->display_errors();
+                }
+            }
+
             $data = [
                 'jalan' => $this->input->post('jalan'),
                 'no_ruas' => $this->input->post('no_ruas'),
@@ -64,7 +83,8 @@ class Jalan extends CI_Controller
                 'sedang' => $this->input->post('sedang'),
                 'rusak_ringan' => $this->input->post('rusak_ringan'),
                 'rusak_berat' => $this->input->post('rusak_berat'),
-                'dokumentasi' => 'tes.jpg',
+                // 'dokumentasi' => 'tes.jpg',
+
 
             ];
             $this->db->where('id', $id);

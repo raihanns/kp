@@ -93,12 +93,8 @@
                     </fieldset>
                     <br>
                     <div class="form-group">
-                        <<<<<<< Updated upstream <label for="exampleFormControlFile1">Dokumentasi Jalan</label>
-                            <input type="file" class="form-control-file" id="dokumentasi">
-                            =======
-                            <h4 for="exampleFormControlFile1">Dokumentasi Jalan</h4>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="dokumentasi" value="<?= $jalan['dokumentasi']; ?>">
-                            >>>>>>> Stashed changes
+                        <h4 for="exampleFormControlFile1">Dokumentasi Jalan</h4>
+                        <input type="file" class="form-control-file" id="dokumentasi" name="dokumentasi[]" multiple="multiple" value="">
                     </div>
                     <input class="btn btn-primary mt-3" type="submit" value="Submit">
                 </form>
