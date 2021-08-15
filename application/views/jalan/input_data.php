@@ -16,6 +16,7 @@
                     <br>
                     <div class="mb-2">
                         <label for="ruasjalan" class="form-label">No Ruas Jalan</label>
+<<<<<<< Updated upstream
                         <input type="text" class="form-control" id="no_ruas" name="no_ruas">
                     </div>
                     <div class="mb-2">
@@ -38,6 +39,30 @@
                         <div class="col">
                             <label for="lebar">Lebar (M)</label>
                             <input type="text" class="form-control" id="lebar" name="lebar" />
+=======
+                        <input type="text" class="form-control" id="ruasjalan" name="no_ruas" value="<?= $jalan['no_ruas']; ?>">
+                    </div>
+                    <div class="mb-2">
+                        <label for="namaruasjalan" class="form-label">Nama Ruas Jalan</label>
+                        <input type="text" class="form-control" id="namaruasjalan" name="jalan" value="<?= $jalan['jalan']; ?>" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="kecamatan" class="form-label">Kecamatan</label>
+                        <input type="text" class="form-control" id="kecamatan" name="kecamatan" value="<?= $jalan['kecamatan']; ?>" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="desa" class="form-label">Desa</label>
+                        <input type="text" class="form-control" id="desa" name="desa" value="<?= $jalan['desa']; ?>" />
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="panjang">Panjang</label>
+                            <input type="text" class="form-control" id="panjang" name="panjang" value="<?= $jalan['panjang']; ?>" />
+                        </div>
+                        <div class="col">
+                            <label for="lebar">Lebar</label>
+                            <input type="text" class="form-control" id="lebar" name="lebar" value="<?= $jalan['lebar']; ?>" />
+>>>>>>> Stashed changes
                         </div>
                     </div>
                     </fieldset>
@@ -48,21 +73,21 @@
                     <div class="row g-3">
                         <div class="col">
                             <label for="panjang">Jenis Perkerasan Aspal (KM)</label>
-                            <input type="text" class="form-control" id="aspal" />
+                            <input type="text" class="form-control" id="aspal" name="aspal" value="<?= $jalan['aspal']; ?>" />
                         </div>
                         <div class="col">
                             <label for="lebar">Jenis Perkerasan Beton (KM)</label>
-                            <input type="text" class="form-control" id="beton" />
+                            <input type="text" class="form-control" id="beton" name="beton" value="<?= $jalan['beton']; ?>" />
                         </div>
                     </div>
                     <div class="row g-3">
                         <div class="col">
                             <label for="panjang">Jenis Perkerasan Kerikil (KM)</label>
-                            <input type="text" class="form-control" id="kerikil" />
+                            <input type="text" class="form-control" id="kerikil" name="kerikil" value="<?= $jalan['kerikil']; ?>" />
                         </div>
                         <div class="col">
                             <label for="lebar">Jenis Perkerasan Tanah/Belum Tembus(KM)</label>
-                            <input type="text" class="form-control" id="tanah" />
+                            <input type="text" class="form-control" id="tanah" name="tanah_belum" value="<?= $jalan['tanah_belum']; ?>" />
                         </div>
                     </div>
 
@@ -73,28 +98,33 @@
                     <div class="row g-3">
                         <div class="col">
                             <label for="panjang">Kondisi Baik (KM)</label>
-                            <input type="text" class="form-control" id="baik" />
+                            <input type="text" class="form-control" id="baik" name="baik" value="<?= $jalan['baik']; ?>" />
                         </div>
                         <div class="col">
                             <label for="lebar">Kondisi Sedang (KM)</label>
-                            <input type="text" class="form-control" id="sedang" />
+                            <input type="text" class="form-control" id="sedang" name="sedang" value="<?= $jalan['sedang']; ?>" />
                         </div>
                     </div>
                     <div class="row g-3">
                         <div class="col">
                             <label for="panjang">Kondisi Rusak Ringan (KM)</label>
-                            <input type="text" class="form-control" id="rusakringan" />
+                            <input type="text" class="form-control" id="rusakringan" name="rusak_ringan" value="<?= $jalan['rusak_ringan']; ?>" />
                         </div>
                         <div class="col">
                             <label for="lebar">Kondisi Rusak Berat (KM)</label>
-                            <input type="text" class="form-control" id="rusakberat" />
+                            <input type="text" class="form-control" id="rusakberat" name="rusak_berat" value="<?= $jalan['rusak_berat']; ?>" />
                         </div>
                     </div>
                     </fieldset>
                     <br>
                     <div class="form-group">
+<<<<<<< Updated upstream
                         <label for="exampleFormControlFile1">Dokumentasi Jalan</label>
                         <input type="file" class="form-control-file" id="dokumentasi">
+=======
+                        <h4 for="exampleFormControlFile1">Dokumentasi Jalan</h4>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="dokumentasi" value="<?= $jalan['dokumentasi']; ?>">
+>>>>>>> Stashed changes
                     </div>
                     <input class="btn btn-primary mt-3" type="submit" value="Submit">
                 </form>
