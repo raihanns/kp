@@ -14,12 +14,7 @@ class Main extends CI_Controller
     {
         $data['title'] = 'Main';
         $data['jalan'] = $this->M_Jalan->getJalan();
-        // $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        // $this->load->view('templates/header', $data);
-        // $this->load->view('templates/sidebar', $data);
-        // $this->load->view('templates/topbar', $data);
         $this->load->view('main', $data);
-        // $this->load->view('templates/footer', $data);
     }
     public function data_jalan($id)
     {

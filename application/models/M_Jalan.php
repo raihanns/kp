@@ -11,6 +11,7 @@ class M_Jalan extends CI_model
         return $this->db->get('jalan')->result_array();
     }
 
+
     public function getJalanById($id)
     {
         $this->db->where('id', $id);
