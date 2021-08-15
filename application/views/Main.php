@@ -69,7 +69,8 @@
     </nav>
     <br>
 
-    <main role="main" class="container">
+
+    <main role="main" class="container my-3 p-3 bg-light rounded shadow-sm">
         <table class="table">
             <thead class="thead-dark">
                 <tr>
