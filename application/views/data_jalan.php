@@ -127,7 +127,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Lebar</strong>
-                    <?= $jalan['lebar']; ?>
+                    <?= $jalan['lebar'] . ' M'; ?>
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -172,7 +172,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block"><?= ($jalan['aspal'] / $jalan['panjang']) * 100; ?></span>
+                    <span class="d-block"><?= number_format($jalan['aspal'] / $jalan['panjang'] * 100, 2) . ' %'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -184,7 +184,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block"><?= ($jalan['beton'] / $jalan['panjang']) * 100; ?></span>
+                    <span class="d-block"><?= number_format($jalan['beton'] / $jalan['panjang'] * 100, 2) . ' %'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -196,7 +196,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block"><?= ($jalan['kerikil'] / $jalan['panjang']) * 100; ?></span>
+                    <span class="d-block"><?= number_format($jalan['kerikil'] / $jalan['panjang'] * 100, 2) . ' %'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -208,7 +208,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block"><?= ($jalan['tanah_belum'] / $jalan['panjang']) * 100; ?></span>
+                    <span class="d-block"><?= number_format($jalan['tanah_belum'] / $jalan['panjang'] * 100, 2) . ' %'; ?></span>
                 </div>
             </div>
         </div>
@@ -231,7 +231,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block"><?= ($jalan['baik'] / $jalan['panjang']) * 100; ?></span>
+                    <span class="d-block"><?= number_format($jalan['baik'] / $jalan['panjang'] * 100, 2) . ' %'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -243,7 +243,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block"><?= ($jalan['sedang'] / $jalan['panjang']) * 100; ?></span>
+                    <span class="d-block"><?= number_format($jalan['sedang'] / $jalan['panjang'] * 100, 2) . ' %'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -255,7 +255,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block"><?= ($jalan['rusak_ringan'] / $jalan['panjang']) * 100; ?></span>
+                    <span class="d-block"><?= number_format($jalan['rusak_ringan'] / $jalan['panjang'] * 100, 2) . ' %'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
@@ -267,7 +267,7 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block"><?= ($jalan['rusak_berat'] / $jalan['panjang']) * 100; ?></span>
+                    <span class="d-block"><?= number_format($jalan['rusak_berat'] / $jalan['panjang'] * 100, 2) . ' %'; ?></span>
                 </div>
             </div>
         </div>

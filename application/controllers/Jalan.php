@@ -79,7 +79,7 @@ class Jalan extends CI_Controller
                 'sedang' => $this->input->post('sedang'),
                 'rusak_ringan' => $this->input->post('rusak_ringan'),
                 'rusak_berat' => $this->input->post('rusak_berat'),
-                'image' => $this->_uploadImage(),
+                'dokumentasi' => $this->_uploadImage(),
 
 
             ];
