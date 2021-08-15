@@ -16,30 +16,6 @@
                     <br>
                     <div class="mb-2">
                         <label for="ruasjalan" class="form-label">No Ruas Jalan</label>
-<<<<<<< Updated upstream
-                        <input type="text" class="form-control" id="no_ruas" name="no_ruas">
-                    </div>
-                    <div class="mb-2">
-                        <label for="namaruasjalan" class="form-label">Nama Ruas Jalan</label>
-                        <input type="text" class="form-control" id="jalan" name="jalan" value="<?= $jalan['jalan']; ?>" />
-                    </div>
-                    <div class="mb-2">
-                        <label for="kecamatan" class="form-label">Kecamatan</label>
-                        <input type="text" class="form-control" id="kecamatan" name="kecamatan" />
-                    </div>
-                    <div class="mb-2">
-                        <label for="desa" class="form-label">Desa</label>
-                        <input type="text" class="form-control" id="desa" name="desa" />
-                    </div>
-                    <div class="row g-3">
-                        <div class="col">
-                            <label for="panjang">Panjang (KM)</label>
-                            <input type="text" class="form-control" id="panjang" name="panjang" />
-                        </div>
-                        <div class="col">
-                            <label for="lebar">Lebar (M)</label>
-                            <input type="text" class="form-control" id="lebar" name="lebar" />
-=======
                         <input type="text" class="form-control" id="ruasjalan" name="no_ruas" value="<?= $jalan['no_ruas']; ?>">
                     </div>
                     <div class="mb-2">
@@ -62,7 +38,6 @@
                         <div class="col">
                             <label for="lebar">Lebar</label>
                             <input type="text" class="form-control" id="lebar" name="lebar" value="<?= $jalan['lebar']; ?>" />
->>>>>>> Stashed changes
                         </div>
                     </div>
                     </fieldset>
@@ -118,13 +93,12 @@
                     </fieldset>
                     <br>
                     <div class="form-group">
-<<<<<<< Updated upstream
-                        <label for="exampleFormControlFile1">Dokumentasi Jalan</label>
-                        <input type="file" class="form-control-file" id="dokumentasi">
-=======
-                        <h4 for="exampleFormControlFile1">Dokumentasi Jalan</h4>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="dokumentasi" value="<?= $jalan['dokumentasi']; ?>">
->>>>>>> Stashed changes
+                        <<<<<<< Updated upstream <label for="exampleFormControlFile1">Dokumentasi Jalan</label>
+                            <input type="file" class="form-control-file" id="dokumentasi">
+                            =======
+                            <h4 for="exampleFormControlFile1">Dokumentasi Jalan</h4>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="dokumentasi" value="<?= $jalan['dokumentasi']; ?>">
+                            >>>>>>> Stashed changes
                     </div>
                     <input class="btn btn-primary mt-3" type="submit" value="Submit">
                 </form>

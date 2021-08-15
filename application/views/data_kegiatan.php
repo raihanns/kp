@@ -189,7 +189,11 @@
 
     <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
         <strong class="d-block text-gray-dark">Video Kegiatan</strong>
-        <iframe src="<?= base_url('assets/video/'); ?>jalan.mp4" width="400" height="400" alt=""></iframe>
+        <video controls width="500" height="400">
+            <source src="<?= base_url('assets/video/'); ?>jalan.mp4" type="video/mp4" autostart="false">
+
+            Your browser does not support the video tag.
+        </video>
     </p>
 </div>
 </div>
