@@ -52,6 +52,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
         <div class="navbar-collapse data_jalan-collapse" id="navbarsExampleDefault">
         </div>
     </nav>
@@ -72,7 +73,6 @@
             <a class="nav-link" href="#">Link</a>
         </nav>
     </div>
-
     <main role="main" class="container">
         <div class="d-flex align-items-center p-3 my-3 text-black-50 bg-light rounded shadow-sm">
             <img src="<?= base_url('assets/img/'); ?>pemkab.png" alt="" width="48" height="48">

@@ -47,124 +47,53 @@
                     <br>
                     <div class="row g-3">
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="aspalkm" class="form-label">Jenis Perkerasan Aspal(KM)</label>
-                                <input type="text" class="form-control" id="aspalkm" />
-                            </div>
+                            <label for="panjang">Jenis Perkerasan Aspal (KM)</label>
+                            <input type="text" class="form-control" id="aspal" />
                         </div>
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="aspal%" class="form-label">Jenis Perkerasan Aspal(Meter)</label>
-                                <input type="text" class="form-control" id="aspal%" />
-                            </div>
+                            <label for="lebar">Jenis Perkerasan Beton (KM)</label>
+                            <input type="text" class="form-control" id="beton" />
                         </div>
                     </div>
                     <div class="row g-3">
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="betonkm" class="form-label">Jenis Perkerasan Beton(KM)</label>
-                                <input type="text" class="form-control" id="betonkm" />
-                            </div>
+                            <label for="panjang">Jenis Perkerasan Kerikil (KM)</label>
+                            <input type="text" class="form-control" id="kerikil" />
                         </div>
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="beton%" class="form-label">Jenis Perkerasan Beton(Meter)</label>
-                                <input type="text" class="form-control" id="beton%" />
-                            </div>
+                            <label for="lebar">Jenis Perkerasan Tanah/Belum Tembus(KM)</label>
+                            <input type="text" class="form-control" id="tanah" />
                         </div>
                     </div>
-                    <div class="row g-3">
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="kerikilkm" class="form-label">Jenis Perkerasan Kerikil(KM)</label>
-                                <input type="text" class="form-control" id="kerikilkm" />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="kerikil%" class="form-label">Jenis Perkerasan Kerikil(Meter)</label>
-                                <input type="text" class="form-control" id="kerikil%" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="tanahkm" class="form-label">Jenis Perkerasan Tanah/Belum Tembus(KM)</label>
-                                <input type="text" class="form-control" id="tanahkm" />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="tanah%" class="form-label">Jenis Perkerasan Tanah/Belum Tembus(Meter)</label>
-                                <input type="text" class="form-control" id="tanah%" />
-                            </div>
-                        </div>
-                    </div>
+
                     <div style="text-align: left; padding-top: 30px">
                         <h4>KONDISI JALAN</h4>
                     </div>
                     <br>
                     <div class="row g-3">
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="baikkm" class="form-label">Kondisi Baik(KM)</label>
-                                <input type="text" class="form-control" id="baikkm" />
-                            </div>
+                            <label for="panjang">Kondisi Baik (KM)</label>
+                            <input type="text" class="form-control" id="baik" />
                         </div>
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="baik%" class="form-label">Kondisi Baik(Meter)</label>
-                                <input type="text" class="form-control" id="baik%" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row g-3">
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="sedangkm" class="form-label">Kondisi Sedang(KM)</label>
-                                <input type="text" class="form-control" id="sedangkm" />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="sedang%" class="form-label">Kondisi Sedang(Meter)</label>
-                                <input type="text" class="form-control" id="sedang%" />
-                            </div>
+                            <label for="lebar">Kondisi Sedang (KM)</label>
+                            <input type="text" class="form-control" id="sedang" />
                         </div>
                     </div>
                     <div class="row g-3">
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="ringankm" class="form-label">Kondisi Rusak Ringan(KM)</label>
-                                <input type="text" class="form-control" id="ringankm" />
-                            </div>
+                            <label for="panjang">Kondisi Rusak Ringan (KM)</label>
+                            <input type="text" class="form-control" id="rusakringan" />
                         </div>
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="ringankm%" class="form-label">Kondisi Rusak Ringan(Meter)</label>
-                                <input type="text" class="form-control" id="ringankm%" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="beratkm" class="form-label">Kondisi Rusak Berat(KM)</label>
-                                <input type="text" class="form-control" id="beratkm" />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="berat%" class="form-label">Kondisi Rusak Berat(Meter)</label>
-                                <input type="text" class="form-control" id="berat%" />
-                            </div>
+                            <label for="lebar">Kondisi Rusak Berat (KM)</label>
+                            <input type="text" class="form-control" id="rusakberat" />
                         </div>
                     </div>
                     </fieldset>
+                    <br>
                     <div class="form-group">
-                        <label for="exampleFormControlFile1">Dokumentasi Jalan</label>
+                        <h4 for="exampleFormControlFile1">Dokumentasi Jalan</h4>
                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
                     </div>
                 </form>
