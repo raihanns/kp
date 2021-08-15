@@ -7,37 +7,37 @@
     <div class="row">
         <div class="col-lg">
 
-
+            <?= $this->session->flashdata('message'); ?>
             <!-- Card Body -->
             <div class="card-body">
                 <h4 style="text-align: center; padding-top: 30px"><?= $jalan['jalan']; ?></h4>
-                <form>
+                <form action="<?= base_url('jalan/input_data/' . $jalan['id']); ?>" method="POST">
                     <h4>DATA RUAS JALAN</h4>
                     <br>
                     <div class="mb-2">
                         <label for="ruasjalan" class="form-label">No Ruas Jalan</label>
-                        <input type="text" class="form-control" id="ruasjalan" name="">
+                        <input type="text" class="form-control" id="ruasjalan" name="no_ruas" value="<?= $jalan['no_ruas']; ?>">
                     </div>
                     <div class="mb-2">
                         <label for="namaruasjalan" class="form-label">Nama Ruas Jalan</label>
-                        <input type="text" class="form-control" id="namaruasjalan" />
+                        <input type="text" class="form-control" id="namaruasjalan" name="jalan" value="<?= $jalan['jalan']; ?>" />
                     </div>
                     <div class="mb-2">
                         <label for="kecamatan" class="form-label">Kecamatan</label>
-                        <input type="text" class="form-control" id="kecamatan" />
+                        <input type="text" class="form-control" id="kecamatan" name="kecamatan" value="<?= $jalan['kecamatan']; ?>" />
                     </div>
                     <div class="mb-2">
                         <label for="desa" class="form-label">Desa</label>
-                        <input type="text" class="form-control" id="desa" />
+                        <input type="text" class="form-control" id="desa" name="desa" value="<?= $jalan['desa']; ?>" />
                     </div>
                     <div class="row g-3">
                         <div class="col">
                             <label for="panjang">Panjang</label>
-                            <input type="text" class="form-control" id="panjang" />
+                            <input type="text" class="form-control" id="panjang" name="panjang" value="<?= $jalan['panjang']; ?>" />
                         </div>
                         <div class="col">
                             <label for="lebar">Lebar</label>
-                            <input type="text" class="form-control" id="lebar" />
+                            <input type="text" class="form-control" id="lebar" name="lebar" value="<?= $jalan['lebar']; ?>" />
                         </div>
                     </div>
                     </fieldset>
@@ -47,129 +47,58 @@
                     <br>
                     <div class="row g-3">
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="aspalkm" class="form-label">Jenis Perkerasan Aspal(KM)</label>
-                                <input type="text" class="form-control" id="aspalkm" />
-                            </div>
+                            <label for="panjang">Jenis Perkerasan Aspal (KM)</label>
+                            <input type="text" class="form-control" id="aspal" name="aspal" value="<?= $jalan['aspal']; ?>" />
                         </div>
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="aspal%" class="form-label">Jenis Perkerasan Aspal(Meter)</label>
-                                <input type="text" class="form-control" id="aspal%" />
-                            </div>
+                            <label for="lebar">Jenis Perkerasan Beton (KM)</label>
+                            <input type="text" class="form-control" id="beton" name="beton" value="<?= $jalan['beton']; ?>" />
                         </div>
                     </div>
                     <div class="row g-3">
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="betonkm" class="form-label">Jenis Perkerasan Beton(KM)</label>
-                                <input type="text" class="form-control" id="betonkm" />
-                            </div>
+                            <label for="panjang">Jenis Perkerasan Kerikil (KM)</label>
+                            <input type="text" class="form-control" id="kerikil" name="kerikil" value="<?= $jalan['kerikil']; ?>" />
                         </div>
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="beton%" class="form-label">Jenis Perkerasan Beton(Meter)</label>
-                                <input type="text" class="form-control" id="beton%" />
-                            </div>
+                            <label for="lebar">Jenis Perkerasan Tanah/Belum Tembus(KM)</label>
+                            <input type="text" class="form-control" id="tanah" name="tanah_belum" value="<?= $jalan['tanah_belum']; ?>" />
                         </div>
                     </div>
-                    <div class="row g-3">
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="kerikilkm" class="form-label">Jenis Perkerasan Kerikil(KM)</label>
-                                <input type="text" class="form-control" id="kerikilkm" />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="kerikil%" class="form-label">Jenis Perkerasan Kerikil(Meter)</label>
-                                <input type="text" class="form-control" id="kerikil%" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="tanahkm" class="form-label">Jenis Perkerasan Tanah/Belum Tembus(KM)</label>
-                                <input type="text" class="form-control" id="tanahkm" />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="tanah%" class="form-label">Jenis Perkerasan Tanah/Belum Tembus(Meter)</label>
-                                <input type="text" class="form-control" id="tanah%" />
-                            </div>
-                        </div>
-                    </div>
+
                     <div style="text-align: left; padding-top: 30px">
                         <h4>KONDISI JALAN</h4>
                     </div>
                     <br>
                     <div class="row g-3">
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="baikkm" class="form-label">Kondisi Baik(KM)</label>
-                                <input type="text" class="form-control" id="baikkm" />
-                            </div>
+                            <label for="panjang">Kondisi Baik (KM)</label>
+                            <input type="text" class="form-control" id="baik" name="baik" value="<?= $jalan['baik']; ?>" />
                         </div>
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="baik%" class="form-label">Kondisi Baik(Meter)</label>
-                                <input type="text" class="form-control" id="baik%" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row g-3">
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="sedangkm" class="form-label">Kondisi Sedang(KM)</label>
-                                <input type="text" class="form-control" id="sedangkm" />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="sedang%" class="form-label">Kondisi Sedang(Meter)</label>
-                                <input type="text" class="form-control" id="sedang%" />
-                            </div>
+                            <label for="lebar">Kondisi Sedang (KM)</label>
+                            <input type="text" class="form-control" id="sedang" name="sedang" value="<?= $jalan['sedang']; ?>" />
                         </div>
                     </div>
                     <div class="row g-3">
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="ringankm" class="form-label">Kondisi Rusak Ringan(KM)</label>
-                                <input type="text" class="form-control" id="ringankm" />
-                            </div>
+                            <label for="panjang">Kondisi Rusak Ringan (KM)</label>
+                            <input type="text" class="form-control" id="rusakringan" name="rusak_ringan" value="<?= $jalan['rusak_ringan']; ?>" />
                         </div>
                         <div class="col">
-                            <div class="mb-2">
-                                <label for="ringankm%" class="form-label">Kondisi Rusak Ringan(Meter)</label>
-                                <input type="text" class="form-control" id="ringankm%" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="beratkm" class="form-label">Kondisi Rusak Berat(KM)</label>
-                                <input type="text" class="form-control" id="beratkm" />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="berat%" class="form-label">Kondisi Rusak Berat(Meter)</label>
-                                <input type="text" class="form-control" id="berat%" />
-                            </div>
+                            <label for="lebar">Kondisi Rusak Berat (KM)</label>
+                            <input type="text" class="form-control" id="rusakberat" name="rusak_berat" value="<?= $jalan['rusak_berat']; ?>" />
                         </div>
                     </div>
                     </fieldset>
+                    <br>
                     <div class="form-group">
-                        <label for="exampleFormControlFile1">Dokumentasi Jalan</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <h4 for="exampleFormControlFile1">Dokumentasi Jalan</h4>
+                        <input type="file" class="form-control-file" id="dokumentasi" name="dokumentasi[]" multiple="multiple" value="">
                     </div>
+                    <input class="btn btn-primary mt-3" type="submit" value="Submit">
                 </form>
                 <!-- akhir form input -->
-                <input class="btn btn-primary mt-3" type="submit" value="Submit">
             </div>
 
         </div>

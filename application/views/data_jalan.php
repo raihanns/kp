@@ -52,6 +52,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
         <div class="navbar-collapse data_jalan-collapse" id="navbarsExampleDefault">
         </div>
     </nav>
@@ -72,7 +73,6 @@
             <a class="nav-link" href="#">Link</a>
         </nav>
     </div>
-
     <main role="main" class="container">
         <div class="d-flex align-items-center p-3 my-3 text-black-50 bg-light rounded shadow-sm">
             <img src="<?= base_url('assets/img/'); ?>pemkab.png" alt="" width="48" height="48">
@@ -107,7 +107,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Panjang</strong>
-                    <?= $jalan['panjang']; ?>
+                    <?= $jalan['panjang'] . ' KM'; ?>
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -127,7 +127,7 @@
 
                 <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <strong class="d-block text-gray-dark">Lebar</strong>
-                    <?= $jalan['lebar']; ?>
+                    <?= $jalan['lebar'] . ' M'; ?>
                 </p>
             </div>
             <div class="media text-muted pt-3">
@@ -166,49 +166,49 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Jenis Aspal</strong>
                     </div>
-                    <span class="d-block"><?= $jalan['aspal']; ?></span>
+                    <span class="d-block"><?= $jalan['aspal'] . ' KM'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block">35%</span>
+                    <span class="d-block"><?= ($jalan['aspal'] / $jalan['panjang']) * 100; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Jenis Beton</strong>
                     </div>
-                    <span class="d-block"><?= $jalan['beton']; ?></span>
+                    <span class="d-block"><?= $jalan['beton'] . ' KM'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block">35%</span>
+                    <span class="d-block"><?= ($jalan['beton'] / $jalan['panjang']) * 100; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Jenis Kerikil</strong>
                     </div>
-                    <span class="d-block"><?= $jalan['kerikil']; ?></span>
+                    <span class="d-block"><?= $jalan['kerikil'] . ' KM'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block">35%</span>
+                    <span class="d-block"><?= ($jalan['kerikil'] / $jalan['panjang']) * 100; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Jenis Tanah</strong>
                     </div>
-                    <span class="d-block"><?= $jalan['tanah_belum']; ?></span>
+                    <span class="d-block"><?= $jalan['tanah_belum'] . ' KM'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block">35%</span>
+                    <span class="d-block"><?= ($jalan['tanah_belum'] / $jalan['panjang']) * 100; ?></span>
                 </div>
             </div>
         </div>
@@ -225,49 +225,49 @@
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Kondisi Baik</strong>
                     </div>
-                    <span class="d-block"><?= $jalan['baik']; ?></span>
+                    <span class="d-block"><?= $jalan['baik'] . ' KM'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block">25%</span>
+                    <span class="d-block"><?= ($jalan['baik'] / $jalan['panjang']) * 100; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Kondisi Sedang</strong>
                     </div>
-                    <span class="d-block"><?= $jalan['sedang']; ?></span>
+                    <span class="d-block"><?= $jalan['sedang'] . ' KM'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block">25%</span>
+                    <span class="d-block"><?= ($jalan['sedang'] / $jalan['panjang']) * 100; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Rusak Ringan</strong>
                     </div>
-                    <span class="d-block"><?= $jalan['rusak_ringan']; ?></span>
+                    <span class="d-block"><?= $jalan['rusak_ringan'] . ' KM'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block">25%</span>
+                    <span class="d-block"><?= ($jalan['rusak_ringan'] / $jalan['panjang']) * 100; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Rusak Berat</strong>
                     </div>
-                    <span class="d-block"><?= $jalan['rusak_berat']; ?></span>
+                    <span class="d-block"><?= $jalan['rusak_berat'] . ' KM'; ?></span>
                 </div>
                 <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <strong class="text-gray-dark">Dalam %</strong>
                     </div>
-                    <span class="d-block">25%</span>
+                    <span class="d-block"><?= ($jalan['rusak_berat'] / $jalan['panjang']) * 100; ?></span>
                 </div>
             </div>
         </div>

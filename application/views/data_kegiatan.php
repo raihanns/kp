@@ -99,12 +99,12 @@
     </div>
 
     <main role="main" class="container">
-        <div class="d-flex align-items-center p-3 my-3 text-black-50 bg-purple rounded shadow-sm">
+        <div class="d-flex align-items-center p-3 my-3 text-black-50 bg-light rounded shadow-sm">
             <img src="<?= base_url('assets/img/'); ?>pemkab.png" alt="" width="48" height="48">
             <div class="lh-100">
-                <h6 class="mb-0 text-center-Black lh-100 "> PEMERINTAH KABUPATEN BANDUNG</h6>
-                <h6 class="mb-0 text-center-Black lh-100 "> DINAS PEKERJAAN UMUM DAN TATA RUANG</h6>
-                <small>  Jl. Raya Soreang-Banjaran KM.3 Kabupaten Bandung</small>
+                <h6 class="mb-0 text-center-Black lh-100 ">PEMERINTAH KABUPATEN BANDUNG</h6>
+                <h6 class="mb-0 text-center-Black lh-100 ">DINAS PEKERJAAN UMUM DAN TATA RUANG</h6>
+                <small>Jl. Raya Soreang-Banjaran KM.3 Kabupaten Bandung (022) 5892580</small>
             </div>
         </div>
 
@@ -114,7 +114,7 @@
 
         <!-- PROFILE JALAN  -->
         <div class="my-3 p-3 bg-white rounded shadow-sm">
-            <h6 class="border-bottom border-gray pb-2 mb-0">KEGIATAN</h6>
+            <h5 class="border-bottom border-gray pb-2 mb-0">KEGIATAN</h5>
             <div class="media text-muted pt-3">
                 <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
@@ -161,37 +161,41 @@
             </div>
 </body>
 <div class="media text-muted pt-3">
-                <img src="<?= base_url('assets/img/'); ?>B25.jpeg" width="500" height="300" alt="">
-                <div class="media-body pb-3 mb-0 small lh-125 border-left border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                    </div>
-                </div>
-                <img src="<?= base_url('assets/img/'); ?>B50.jpeg" width="500" height="300" alt="">
-            </div>
+    <img src="<?= base_url('assets/img/'); ?>B25.jpeg" width="500" height="300" alt="">
+    <div class="media-body pb-3 mb-0 small lh-125 border-left border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+        </div>
+    </div>
+    <img src="<?= base_url('assets/img/'); ?>B50.jpeg" width="500" height="300" alt="">
+</div>
 
-            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <div class="d-flex justify-content-between align-items-center w-100">
-                </div>
-            </div>
+<div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+    <div class="d-flex justify-content-between align-items-center w-100">
+    </div>
+</div>
 
-            <div class="media text-muted pt-3">
-                <img src="<?= base_url('assets/img/'); ?>B100.jpeg" width="500" height="300" alt="">
-                <div class="media-body pb-3 mb-0 small lh-125 border-left border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                    </div>
-                </div>
-            </div>
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#2a9d8f" /><text x="50%" y="50%" fill="#ffffff" dy=".3em">6</text>
-                </svg>
+<div class="media text-muted pt-3">
+    <img src="<?= base_url('assets/img/'); ?>B100.jpeg" width="500" height="300" alt="">
+    <div class="media-body pb-3 mb-0 small lh-125 border-left border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+        </div>
+    </div>
+</div>
+<div class="media text-muted pt-3">
+    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#2a9d8f" /><text x="50%" y="50%" fill="#ffffff" dy=".3em">6</text>
+    </svg>
 
-                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">Video Kegiatan</strong>
-                    <iframe src="<?= base_url('assets/video/'); ?>jalan.mp4" width="400" height="400" alt=""></iframe>
-                </p>
-            </div>
+    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <strong class="d-block text-gray-dark">Video Kegiatan</strong>
+        <video controls width="500" height="400">
+            <source src="<?= base_url('assets/video/'); ?>jalan.mp4" type="video/mp4" autostart="false">
+
+            Your browser does not support the video tag.
+        </video>
+    </p>
+</div>
 </div>
 
 </div>

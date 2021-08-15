@@ -20,25 +20,25 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <?php $i = 1; ?>
-                            <?php foreach ($jalan as $j) : ?>
-                        <tr>
-                            <th scope="row"><?= $i; ?></th>
-                            <td><?= $j['jalan']; ?></td>
-                            <td>
-                                <!-- <a class="btn btn-warning" href="#" role="button">Edit</a> -->
-                                <a href="<?= base_url('jalan/input_data/' . $j['id']); ?>" class="btn btn-warning btn-sm"><i class="fas fa-plus"></i></a>
-                                <a href="<?= base_url('jalan/deleteJalan/') . $j['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus data ini?');"><i class="fas fa-trash-alt"></i></a>
 
-                            </td>
+                        <?php $i = 1; ?>
+                        <?php foreach ($jalan as $j) : ?>
+                            <tr>
+                                <th scope="row"><?= $i; ?></th>
+                                <td><?= $j['jalan']; ?></td>
+                                <td>
+                                    <!-- <a class="btn btn-warning" href="#" role="button">Edit</a> -->
+                                    <a href="<?= base_url('jalan/input_data/' . $j['id']); ?>" class="btn btn-warning btn-sm"><i class="fas fa-plus"></i></a>
+                                    <a href="<?= base_url('jalan/deleteJalan/') . $j['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus data ini?');"><i class="fas fa-trash-alt"></i></a>
+
+                                </td>
+                            </tr>
+                            <?php $i++; ?>
+                        <?php endforeach; ?>
+                        <td>
+
+                        </td>
                         </tr>
-                        <?php $i++; ?>
-                    <?php endforeach; ?>
-                    <td>
-
-                    </td>
-                    </tr>
                     </tbody>
                 </table>
 

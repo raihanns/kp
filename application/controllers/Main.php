@@ -20,21 +20,15 @@ class Main extends CI_Controller
     {
         $data['title'] = 'jalan';
         $data['jalan'] = $this->db->get_where('jalan', ['id' => $id])->row_array();
-        // $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        // $this->load->view('templates/header', $data);
-        // $this->load->view('templates/sidebar', $data);
-        // $this->load->view('templates/topbar', $data);
+
+        $data['jumlah'] = $this->db->query('SELECT * FROM jalan')->num_rows();
+        $data['baik'] = $this->db->select_sum('baik')->get('jalan')->row('baik');
+        $data['panjang'] = $this->db->select_sum('panjang')->get('jalan')->row('panjang');
         $this->load->view('data_jalan', $data);
-        // $this->load->view('templates/footer', $data);
     }
     public function data_kegiatan()
     {
         $data['title'] = 'kegiatan';
-        // $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        // $this->load->view('templates/header', $data);
-        // $this->load->view('templates/sidebar', $data);
-        // $this->load->view('templates/topbar', $data);
         $this->load->view('data_kegiatan', $data);
-        // $this->load->view('templates/footer', $data);
     }
 }
