@@ -49,24 +49,20 @@ class Jalan extends CI_Controller
             $this->load->view('jalan/input_data', $data);
             $this->load->view('templates/footer', $data);
         } else {
-            $upload_image = $_FILES['image']['name'];
-            if ($upload_image) {
-                $config['allowed_types'] = 'jpg|png';
-                $config['max_size'] = 2048;
-                $config['upload_path'] = './assets/img/dokumentasi/';
-                $this->load->library('upload', $config);
+            // $upload_image = $_FILES['image']['name'];
+            // if ($upload_image) {
+            //     $config['allowed_types'] = 'gif|jpg';
+            //     $config['max_size'] = 2048;
+            //     $config['upload_path'] = './assets/img/dokumentasi/';
+            //     $this->load->library('upload', $config);
 
-                if ($this->upload->do_upload('image')) {
-                    $old_image = $data['user']['image'];
-                    if ($old_image != 'default.jpg') {
-                        unlink(FCPATH . 'assets/img/profile/' . $old_image);
-                    }
-                    $new_image = $this->upload->data('file_name');
-                    $this->db->set('dokumentasi', $new_image);
-                } else {
-                    echo $this->upload->display_errors();
-                }
-            }
+            //     if ($this->upload->do_upload('image')) {
+            //         $new_image = $this->upload->data('file_name');
+            //         $this->db->set('image', $new_image);
+            //     } else {
+            //         echo $this->upload->display_errors();
+            //     }
+            // }
 
             $data = [
                 'jalan' => $this->input->post('jalan'),
@@ -83,7 +79,7 @@ class Jalan extends CI_Controller
                 'sedang' => $this->input->post('sedang'),
                 'rusak_ringan' => $this->input->post('rusak_ringan'),
                 'rusak_berat' => $this->input->post('rusak_berat'),
-                // 'dokumentasi' => 'tes.jpg',
+                'image' => $this->_uploadImage(),
 
 
             ];
@@ -93,6 +89,24 @@ class Jalan extends CI_Controller
         <span aria-hidden="true">&times;</span></button>Jalan berhasil di update!</div>');
             redirect('jalan');
         }
+    }
+    private function _uploadImage()
+    {
+        $config['upload_path']          = './assets/img/dokumentasi/';
+        $config['allowed_types']        = 'jpg|png';
+        $config['file_name']            = 'tes';
+        $config['overwrite']            = true;
+        $config['max_size']             = 2048; // 2MB
+        // $config['max_width']            = 1024;
+        // $config['max_height']           = 768;
+
+        $this->load->library('upload', $config);
+
+        if ($this->upload->do_upload('image')) {
+            return $this->upload->data("file_name");
+        }
+
+        return "default.jpg";
     }
 
     public function input_kegiatan($id)

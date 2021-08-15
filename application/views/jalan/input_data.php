@@ -94,7 +94,7 @@
                     <br>
                     <div class="form-group">
                         <h4 for="exampleFormControlFile1">Dokumentasi Jalan</h4>
-                        <input type="file" class="form-control-file" id="dokumentasi" name="dokumentasi[]" multiple="multiple" value="">
+                        <input type="file" class="form-control-file" id="image" name="image">
                     </div>
                     <input class="btn btn-primary mt-3" type="submit" value="Submit">
                 </form>
