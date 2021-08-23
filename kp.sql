@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Agu 2021 pada 12.48
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.2
+-- Generation Time: Aug 23, 2021 at 06:13 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `jalan`
+-- Table structure for table `jalan`
 --
 
 CREATE TABLE `jalan` (
@@ -55,12 +54,12 @@ CREATE TABLE `jalan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `jalan`
+-- Dumping data for table `jalan`
 --
 
 INSERT INTO `jalan` (`id`, `jalan`, `no_ruas`, `kecamatan`, `desa`, `panjang`, `lebar`, `aspal`, `beton`, `kerikil`, `tanah_belum`, `baik`, `sedang`, `rusak_ringan`, `rusak_berat`, `dokumentasi`, `kegiatan`, `perusahaan`, `kontrak`, `jangka`, `volume_pekerjaan`, `foto_kegiatan`, `video_kegiatan`) VALUES
-(11, 'BABAKAN CIKONENG - BATU KUDA', '22.09.04040.01', 'CILEUNYI', '', 1, 3, 1, 0, 0, 0, 1, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(12, 'BTS. NEGLASARI - JALAN TOL', '22.09.03021.01', 'CILEUNYI', '', 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(11, 'BABAKAN CIKONENG - BATU KUDA', '22.09.04040.01', 'CILEUNYI', '', 1, 3, 1, 0, 0, 0, 1, 0, 0, 0, NULL, 'paket', '123', 123, '1231', 212, 'foto.jpg', 'video.mp4'),
+(12, 'BTS. NEGLASARI - JALAN TOL', '22.09.03021.01', 'CILEUNYI', '', 5, 3, 1, 1, 1, 2, 2, 1.5, 0.5, 1, 'default.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (13, 'CIBIRU HILIR - STASION CIMEKAR', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (14, 'CILEUNYI  - BTS.KEC.CILEUNYI/CILENGKRANG (Garung)', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (15, 'CILEUNYI  (Galumpit)  - BOJONGMALATI - JL. PANYAWUNGAN', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -83,7 +82,7 @@ INSERT INTO `jalan` (`id`, `jalan`, `no_ruas`, `kecamatan`, `desa`, `panjang`, `
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -98,7 +97,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
@@ -108,12 +107,14 @@ INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_a
 (10, 'tes123', 'tes@tes123.com', 'default.jpg', '$2y$10$RZXwmbQEYKO6ojTctW9.WeGD7tlf14wzXws0in6FzJRc5vjK6jTMe', 2, 1, 1627961252),
 (11, '123', '123@123.com', 'default.jpg', '$2y$10$ivO2FQCKzJJk4uojZYoznuzvpfXg6nk9KNetQMjPwo/UXmWkUxSLy', 3, 1, 1627961777),
 (12, 'tes', '123@1232.com', 'default.jpg', '$2y$10$lXb/EzHUuy7mrmv80zKKRev7vQBHd/W4qHg1ey/UjiRwwuRLs17FK', 1, 1, 1627961901),
-(13, 'ayoo', 'tes@tes2.com', 'default.jpg', '$2y$10$if38tDkLtURfdn2fMA8ayOt.Ah2jvGbjxgKUcePLkiwC4PDS6pVb2', 1, 1, 1627963630);
+(13, 'ayoo', 'tes@tes2.com', 'default.jpg', '$2y$10$if38tDkLtURfdn2fMA8ayOt.Ah2jvGbjxgKUcePLkiwC4PDS6pVb2', 1, 1, 1627963630),
+(14, 'tes123', 'tes123@tes.com', 'default.jpg', '$2y$10$0J.VCDRl7Hud0HkWaik4muAEHapVRYo1FimjCBM/Z9HTUQcPgDpLO', 3, 1, 1629083966),
+(15, 'Fikri', 'fikri@gmail.com', 'default.jpg', '$2y$10$AFRDZz9.mvu/45uJ.OT56OVn7NfiFhBPhFiawn/zD4PwzOEnFxdwe', 4, 1, 1629087418);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_access_menu`
+-- Table structure for table `user_access_menu`
 --
 
 CREATE TABLE `user_access_menu` (
@@ -123,28 +124,27 @@ CREATE TABLE `user_access_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user_access_menu`
+-- Dumping data for table `user_access_menu`
 --
 
 INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 (1, 1, 1),
 (2, 1, 2),
-(3, 2, 2),
 (6, 1, 3),
 (9, 2, 5),
-(19, 2, 6),
 (20, 1, 6),
 (21, 1, 7),
 (22, 2, 7),
 (25, 3, 6),
 (26, 3, 2),
 (27, 4, 7),
-(29, 4, 2);
+(29, 4, 2),
+(32, 2, 6);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_menu`
+-- Table structure for table `user_menu`
 --
 
 CREATE TABLE `user_menu` (
@@ -153,7 +153,7 @@ CREATE TABLE `user_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user_menu`
+-- Dumping data for table `user_menu`
 --
 
 INSERT INTO `user_menu` (`id`, `menu`) VALUES
@@ -166,7 +166,7 @@ INSERT INTO `user_menu` (`id`, `menu`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_role`
+-- Table structure for table `user_role`
 --
 
 CREATE TABLE `user_role` (
@@ -175,7 +175,7 @@ CREATE TABLE `user_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user_role`
+-- Dumping data for table `user_role`
 --
 
 INSERT INTO `user_role` (`id`, `role`) VALUES
@@ -187,7 +187,7 @@ INSERT INTO `user_role` (`id`, `role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_sub_menu`
+-- Table structure for table `user_sub_menu`
 --
 
 CREATE TABLE `user_sub_menu` (
@@ -200,7 +200,7 @@ CREATE TABLE `user_sub_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user_sub_menu`
+-- Dumping data for table `user_sub_menu`
 --
 
 INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active`) VALUES
@@ -220,77 +220,77 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 --
 
 --
--- Indeks untuk tabel `jalan`
+-- Indexes for table `jalan`
 --
 ALTER TABLE `jalan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user_access_menu`
+-- Indexes for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user_menu`
+-- Indexes for table `user_menu`
 --
 ALTER TABLE `user_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user_role`
+-- Indexes for table `user_role`
 --
 ALTER TABLE `user_role`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user_sub_menu`
+-- Indexes for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `jalan`
+-- AUTO_INCREMENT for table `jalan`
 --
 ALTER TABLE `jalan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT untuk tabel `user_access_menu`
+-- AUTO_INCREMENT for table `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
--- AUTO_INCREMENT untuk tabel `user_menu`
+-- AUTO_INCREMENT for table `user_menu`
 --
 ALTER TABLE `user_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT untuk tabel `user_role`
+-- AUTO_INCREMENT for table `user_role`
 --
 ALTER TABLE `user_role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT untuk tabel `user_sub_menu`
+-- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
